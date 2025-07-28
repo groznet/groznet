@@ -1,0 +1,249 @@
+/*GLOBAL STYLES*/
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+section {
+    padding: 25px 0;
+}
+
+a { color: #0099f7; text-decoration: none; }
+
+a:hover { text-decoration: underline;  }
+
+.font-serif {
+    font-family: serif;
+}
+
+.font-sans {
+    font-family: sans-serif;
+}
+
+/* Global link styles */
+.white-text {
+    color: #fff;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+    /* Space between portfolio cat tab buttons */
+    #portfolio-section .cat-button-row .btn {
+        margin: 5px 0;
+    }
+
+    /* Portfolio item text */
+    #portfolio-section .show p {
+        text-align: center;
+    } 
+}
+/* END: MOBILE */
+
+/*DESKTOP*/
+@media screen and (min-width:768px) {
+    /* Section paper curved shadow effect */
+    .curved-shadow {
+        background: url('images/shfinal.png') no-repeat 50% 0; background-position: 50% -5px;
+    }
+}
+/* END: DESKTOP */
+
+/* Service section column */
+.border {
+    border: 1px solid #eee;
+}
+
+#portfolio-section .project {
+    display: none;
+}
+
+/* Portfolio: Show active/selected tab columns */
+#portfolio-section .show {
+    display: block;
+}
+/* End: Portfolio section */
+
+/* Testimony section */
+#testimony-section figure.testimonial img {
+    border-radius: 50%;
+}
+
+#testimony-section .slick-list {
+    overflow: hidden; /* hide right side incoming reviews */
+}
+
+#testimony-section .slick-slide {
+    float: left;
+}
+
+#testimony-section button {
+    display: none !important;   /* Prev/Next button */
+}
+/* End: Testimony section */
+
+/* FAQ accodition */
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+
+.faq-list li {
+    border: 1px solid #eee;
+    margin-bottom: 1em;
+}
+
+.faq-list .faq-heading::before {
+    content: '+';
+    position: absolute;
+    right: 0px;
+}
+
+.faq-heading {
+    position: relative;
+    margin: 0;
+}
+
+.faq-text {
+    display: none;
+}
+/* End: FAQ accodition */
+
+textarea {
+    resize: none;
+}
+
+/* Focued input element style */
+*:focus-visible {
+    outline: 0px solid #03a9f4;
+}
+
+iframe {
+    width: 100%;
+}
+
+/*Button shine effect*/
+.shine {
+    overflow: hidden;
+    position: relative;
+}
+
+.shine:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient( 120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px
+    }
+    20% {
+        left: 100%
+    }
+    100% {
+        left: 100%
+    }
+}
+/*End: Button shine effect*/
+
+
+/* TYPOGRAPHY STYLES, ADOPTING TAILWIND CLASSES */
+.bg-white {
+    background-color: rgb(255 255 255);
+}
+
+.text-white {
+    color: rgb(255 255 255);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* OPACITY make them single line */
+.opacity-0 { opacity: 0; }
+.opacity-5 { opacity: 0.05; }
+.opacity-10 { opacity: 0.1; }
+.opacity-15 { opacity: 0.15; }
+.opacity-20 { opacity: 0.2; }
+.opacity-25 { opacity: 0.25; }
+.opacity-30 { opacity: 0.3; }
+.opacity-35 { opacity: 0.35; }
+.opacity-40 { opacity: 0.4; }
+.opacity-45 { opacity: 0.45; }
+.opacity-50 { opacity: 0.5; }
+.opacity-55 { opacity: 0.55; }
+.opacity-60 { opacity: 0.6; }
+.opacity-65 { opacity: 0.65; }
+.opacity-70 { opacity: 0.7; }
+.opacity-75 { opacity: 0.75; }
+.opacity-80 { opacity: 0.8; }
+.opacity-85 { opacity: 0.85; }
+.opacity-90 { opacity: 0.9; }
+.opacity-95 { opacity: 0.95; }
+.opacity-100 { opacity: 1; }
+
+.font-bold {
+    font-weight: bold;
+}
+
+#portfolio-section .btn {
+    color: #444;
+    background: linear-gradient(to top, #eaeaea 0, #fff 100%);
+    border-bottom: 1px solid rgb(0 0 0 / 12%);
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.section-grid div {
+    border: 1px solid #eee;
+}
+            
+header .topbar,
+header .topbar a,
+footer .footer-custom, 
+footer .footer-custom a  {
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"],
+textarea,
+select,
+button {
+    padding: 0.5rem;
+    border: 1px solid #eee;
+    background: none;
+}
+
+input[type="submit"], button {
+    cursor: pointer;
+}
+
+.float-right {
+    float: right;
+}
