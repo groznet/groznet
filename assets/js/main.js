@@ -328,3 +328,50 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
 });
+
+
+// Testimonials
+document.addEventListener('DOMContentLoaded', () => {
+    initTestimonials();
+});
+
+async function initTestimonials() {
+    const container = document.getElementById('testimonial-container');
+    if (!container) return;
+
+    try {
+        const response = await fetch('/data/testimonials.json');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        
+        const testimonials = await response.json();
+        
+        container.innerHTML = testimonials.map(item => `
+            <figure class="testimonial">
+                <p>
+                    ${escapeHTML(item.text)}
+                    <div class="btn"></div>
+                </p>
+                <img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.name)}">
+                <div class="people">
+                    <h3>${escapeHTML(item.name)}</h3>
+                    <p class="indentity">${escapeHTML(item.identity)}</p>
+                </div>
+            </figure>
+        `).join('');
+
+        // If you are using a carousel library (Slick, Swiper, etc.), initialize it here:
+        // $('.testiSlide').not('.slick-initialized').slick();
+
+    } catch (error) {
+        console.error('Failed to load testimonials:', error);
+        container.innerHTML = `<p class="error">Не удалось загрузить отзывы.</p>`;
+    }
+}
+
+function escapeHTML(str) {
+    if (!str) return '';
+    return str.replace(/[&<>'"]/g, 
+        tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+    );
+}
+// End: Testimonials
