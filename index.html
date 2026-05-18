@@ -208,9 +208,20 @@
             fetch('/data/portfolio.json')
                 .then(res => res.json())
                 .then(data => {
-                    renderButtons(data.categories);
-                    renderProjects(data.projects);
-                    filterSelection(data.categories[0].id);
+                    // Filter out 'all-sites' from categories
+                    const homeCategories = data.categories.filter(cat => cat.id !== 'all-sites');
+                    
+                    // Optional: Filter out projects that only belong to 'all-sites' 
+                    // (If a project has multiple categories, it will still show under the others)
+                    const homeProjects = data.projects.filter(project => project.category !== 'all-sites');
+
+                    renderButtons(homeCategories);
+                    renderProjects(homeProjects);
+
+                    // Set the first remaining category (Интернет магазины) as default active
+                    if (homeCategories.length > 0) {
+                        filterSelection(homeCategories[0].id);
+                    }
                 });
 
             function renderButtons(categories) {
