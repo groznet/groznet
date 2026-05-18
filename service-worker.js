@@ -8,10 +8,10 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll([
         '/',
         '/index.html',
-        '/style.css',
+        '//assets/css/style.css',
         '/main.js',
-        '/images/logo-192x192.png',
-        '/images/logo-512x512.png'
+        '//assets/images/logo-192x192.png',
+        '//assets/images/logo-512x512.png'
       ]))
   );
 });

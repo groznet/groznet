@@ -1,3 +1,48 @@
+function loadComponent(selector, url, callback) {
+    fetch(url)
+        .then(res => res.text())
+        .then(html => {
+            document.querySelector(selector).innerHTML = html;
+            if (callback) callback();
+        })
+        .catch(err => console.error(`Failed to load ${url}:`, err));
+}
+
+function initHeader() {
+    // Active nav link
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('#navbar-menu a').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+
+    // Mobile toggle
+    const toggle = document.getElementById('navbar-toggle');
+    const menu = document.getElementById('navbar-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+            toggle.classList.toggle('open');
+        });
+    }
+}
+
+function initFooter() {
+    const yearEl = document.getElementById('footer-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+}
+
+// Load components on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('#header');
+    const footer = document.querySelector('#footer');
+
+    if (header) loadComponent('#header', '/components/header.html', initHeader);
+    if (footer) loadComponent('#footer', '/components/footer.html', initFooter);
+});
+
+
 // Main navmenu dropdown mobile code
 document.getElementById("menu").addEventListener("click", function() {
 	var e = document.getElementsByTagName("nav")[0];
@@ -176,3 +221,110 @@ registerServiceWorker();
 
 // Disable right click on website
 document.addEventListener('contextmenu', event => event.preventDefault());
+
+// PORTFOLIO
+document.addEventListener('DOMContentLoaded', async () => {
+
+    const portfolioGrid = document.querySelector('#portfolio-grid');
+    const filtersContainer = document.querySelector('#portfolio-filters');
+
+    const response = await fetch('/data/portfolio.json');
+    const data = await response.json();
+
+    const categories = data.categories;
+    const projects = data.projects;
+
+    let activeCategory = 'all';
+
+    renderFilters();
+    renderProjects();
+
+    function renderFilters() {
+
+        filtersContainer.innerHTML = `
+            <button
+                class="portfolio-filter-btn active"
+                data-category="all"
+            >
+                Все
+            </button>
+        `;
+
+        categories.forEach(category => {
+
+            filtersContainer.innerHTML += `
+                <button
+                    class="portfolio-filter-btn"
+                    data-category="${category.id}"
+                >
+                    ${category.title}
+                </button>
+            `;
+        });
+
+        initFilterEvents();
+    }
+
+    function renderProjects() {
+
+        portfolioGrid.innerHTML = '';
+
+        const filteredProjects = activeCategory === 'all'
+            ? projects
+            : projects.filter(project => project.category === activeCategory);
+
+        filteredProjects.forEach(project => {
+
+            portfolioGrid.innerHTML += `
+                <article class="project-item">
+
+                    <a
+                        href="${project.url}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="${project.image}"
+                            alt="${project.title}"
+                            class="w-full"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <div class="py-4">
+                        <h3>
+                            ${project.title}
+                        </h3>
+
+                        <p>
+                            ${project.description}
+                        </p>
+                    </div>
+
+                </article>
+            `;
+        });
+    }
+
+    function initFilterEvents() {
+
+        const buttons = document.querySelectorAll('.portfolio-filter-btn');
+
+        buttons.forEach(button => {
+
+            button.addEventListener('click', () => {
+
+                buttons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                button.classList.add('active');
+
+                activeCategory = button.dataset.category;
+
+                renderProjects();
+            });
+        });
+    }
+
+});

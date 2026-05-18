@@ -1,0 +1,327 @@
+{
+    "categories": [
+        {
+            "id": "all-sites",
+            "title": "Все проекты"
+        },
+        {
+            "id": "ecommerce-sites",
+            "title": "Интернет магазины"
+        },
+        {
+            "id": "catalog-sites",
+            "title": "Каталоги"
+        },
+        {
+            "id": "portal-sites",
+            "title": "Информационные порталы"
+        },
+        {
+            "id": "corporate-sites",
+            "title": "Корпоративные"
+        }
+    ],
+    "projects": [
+        {
+            "title": "DaimZap",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Магазин-автозапчастей-DaimZap.jpg",
+            "url": "https://daimzap.ru/",
+            "description": "Магазин автозапчастей DaimZap"
+        },
+        {
+            "title": "Интелектуальный Кавказ",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/Интелектуальный-Кавказ.jpg",
+            "url": "https://intelkavkaz.ru/",
+            "description": "Интелектуальный Кавказ"
+        },
+        {
+            "title": "Luna95",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Электроника-и-аксессуары-Luna95.jpg",
+            "url": "https://luna95.ru/",
+            "description": "Электроника и аксессуары Luna95"
+        },
+        {
+            "title": "Терский Рубеж",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/Вахта-Памяти-Терский-Рубеж.jpg",
+            "url": "https://terskiyrubezh.ru",
+            "description": "Вахта Памяти Терский Рубеж"
+        },
+        {
+            "title": "Фонд Адам",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Благотворительный-фонд-Адам.jpg",
+            "url": "https://adamfond.com",
+            "description": "Благотворительный фонд Адам"
+        },
+        {
+            "title": "Dagmara",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Магазин-женской-одежды-Dagmara.jpg",
+            "url": "https://dagmara.ru/",
+            "description": "Магазин женской одежды Dagmara"
+        },
+        {
+            "title": "InTechAcad",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Инженерная-Академия-InTechAcad.jpg",
+            "url": "https://intechacad.ru/",
+            "description": "Инженерная Академия InTechAcad"
+        },
+        {
+            "title": "Samara95",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/Мебельный магазин Samara95.jpg",
+            "url": "https://samara95.ru/",
+            "description": "Мебельный магазин Samara95"
+        },
+        {
+            "title": "DNK-Labs",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/DNK-Labs.jpg",
+            "url": "https://dnk-labs.ru/",
+            "description": "Клиническая диагностика DNK-Labs"
+        },
+        {
+            "title": "ЭлитВорота",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/Автоматические-ворота-ЭлитВорота.jpg",
+            "url": "https://elitvorota.com/",
+            "description": "Автоматические ворота ЭлитВорота"
+        },
+        {
+            "title": "Медресе Аль-Худа",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Медресе-Аль-Худа.jpg",
+            "url": "https://al-huda.ru/",
+            "description": "Медресе Аль-Худа"
+        },
+        {
+            "title": "GovzaIT",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/GovzaIt.jpg",
+            "url": "https://govzait.ru/",
+            "description": "GovzaIT"
+        },
+        {
+            "title": "Alfiya",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Магазин-парфюмерии-Alfiya.jpg",
+            "url": "https://alfiyaperfume.ru/",
+            "description": "Магазин парфюмерии Alfiya"
+        },
+        {
+            "title": "SD95",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Компьютерные-курсы-SD95.jpg",
+            "url": "https://sd95.ru/",
+            "description": "Компьютерные курсы SD95"
+        },
+        {
+            "title": "ZARA",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Магазин косметики Zara.jpg",
+            "url": "https://zaracosmet.ru/",
+            "description": "Магазин косметики Zara"
+        },
+        {
+            "title": "DoorsCorp",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/Магазин дверей DoorsCorp.jpg",
+            "url": "https://doorscorp.ru/",
+            "description": "DoorsCorp - Дверные решения"
+        },
+        {
+            "title": "VainakhCorp",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/VainakhCorp.jpg",
+            "url": "https://www.vainakhcorp.com",
+            "description": "VainakhCorp - Logistics company"
+        },
+        {
+            "title": "Национальный Совет",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/МАОО Национальный Совет.jpg",
+            "url": "https://nacsovet.ru/",
+            "description": "МАОО Национальный Совет"
+        },
+        {
+            "title": "NajahRoom",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Медресе NajahRoom.jpg",
+            "url": "https://najahroom.ru/",
+            "description": "NajahRoom - Исламский образовательный центр"
+        },
+        {
+            "title": "ITCHR",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/ITCHR.jpg",
+            "url": "https://itchr.ru/",
+            "description": "ITCHR - Услуги для игровых клубов"
+        },
+        {
+            "title": "RentCar95",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Аренда авто RentCar95.jpg",
+            "url": "https://rentcar95.ru",
+            "description": "RentCar95 - Аренда авто в Грозном"
+        },
+        {
+            "title": "ООО ЖИЛЬЕ",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/ООО-ЖИЛЬЕ.jpg",
+            "url": "https://zhil095.ru/",
+            "description": "Сайт - ООО «ЖИЛЬЕ»"
+        },
+        {
+            "title": "SportAnimal",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/Магазин спорт питания - SportAnimal.jpg",
+            "url": "https://sportanimal.ru/",
+            "description": "Магазин спортивного питания SportAnimal"
+        },
+        {
+            "title": "ШашлыкМашлык",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/ШашлыкМашлык.jpg",
+            "url": "",
+            "description": "Доставка еды ШашлыкМашлык"
+        },
+        {
+            "title": "Доступное Жилье",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/IPOTEKA95.jpg",
+            "url": "https://ipoteka95.ru/",
+            "description": "Сайт - ООО «ДОСТУПНОЕ ЖИЛЬЕ»"
+        },
+        {
+            "title": "ArcherClub",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/ArcherClub.jpg",
+            "url": "http://archerclub.ru/",
+            "description": "Магазин оружия ArcherClub"
+        },
+        {
+            "title": "Климат Комфорт",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/ClimatComfort.jpg",
+            "url": "https://climat-comfort-group.ru/",
+            "description": "Климат Комфорт"
+        },
+        {
+            "title": "VikkiEmlak",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/VikkieEmlak.jpg",
+            "url": "https://vikkiemlak.com/",
+            "description": "VikkiEmlak - Недвижимость в Турции"
+        },
+        {
+            "title": "Вестник ЧР",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/portals/Vistnik.ru.jpg",
+            "url": "https://vestnik.ru/",
+            "description": "Вестник ЧР"
+        },
+        {
+            "title": "Штукатурка95",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/corporate/Штукатурка95.jpg",
+            "url": "",
+            "description": "Штукатурка95"
+        },
+        {
+            "title": "Ипотечный Центр",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/IPOTEKACENTR.jpg",
+            "url": "https://ipotekacentr095.ru/",
+            "description": "Сайт - ООО «ИПОТЕЧНЫЙ ЦЕНТР»"
+        },
+        {
+            "title": "Финансовая грамотность ЧР",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/Финансовая грамотность ЧР - FINGRAM95.jpg",
+            "url": "https://fingram95.ru/",
+            "description": "Финансовая грамотность ЧР"
+        },
+        {
+            "title": "HizbroFit",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Фитнес Оборудование HIZBROFIT.jpg",
+            "url": "https://hizbrofit.com/",
+            "description": "HizbroFit - Тренажерное оборудование"
+        },
+        {
+            "title": "Поисковое движение России",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/Поисковое Движение России по ЧР.jpg",
+            "url": "https://poisk-chr.ru/",
+            "description": "Поисковое движение России"
+        },
+        {
+            "title": "Автокран СКФО",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Автокран-СКФО.jpg",
+            "url": "http://avtokran-skfo.ru/",
+            "description": "Спецтехника СКФО"
+        },
+        {
+            "title": "Избирательная комиссия ЧР",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/Избирательная Комиссия ЧР- IZBIRKOM.jpg",
+            "url": "https://izbirkomchr.ru/",
+            "description": "Избирательная комиссия ЧР"
+        },
+        {
+            "title": "Сурсад",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/Sursad.jpg",
+            "url": "",
+            "description": "Сурсад"
+        },
+        {
+            "title": "Азалия",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/Садовый центр Азалия.jpg",
+            "url": "https://azaliya95.ru/",
+            "description": "Садовый центр - Азалия"
+        },
+        {
+            "title": "DjigitFitness",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Фитнес Оборудование DjigitFitness.jpg",
+            "url": "http://djigitfitness.ru/",
+            "description": "Фитнес Оборудование DjigitFitness"
+        },
+        {
+            "title": "Грозненский рабочий",
+            "category": "portal-sites",
+            "image": "/assets/images/portfolio/portals/Грозненский рабочий GrozRab.jpg",
+            "url": "https://grozrab.ru/",
+            "description": "Грозненский рабочий"
+        },
+        {
+            "title": "Pitomnik95",
+            "category": "ecommerce-sites",
+            "image": "/assets/images/portfolio/ecommerce/Садовый декоративный Pitomnik95.jpg",
+            "url": "https://pitomnik95.ru/",
+            "description": "Садовый декоративный Pitomnik95"
+        },
+        {
+            "title": "PSNGAME",
+            "category": "catalog-sites",
+            "image": "/assets/images/portfolio/catalog/PSNGAME.jpg",
+            "url": "",
+            "description": "Магазин игр PSNGAME"
+        },
+        {
+            "title": "Золотая Невеста",
+            "category": "corporate-sites",
+            "image": "/assets/images/portfolio/corporate/Видеостудия-Золотая-Невеста.jpg",
+            "url": "https://золотаяневеста.рф/",
+            "description": "Видеостудия Золотая Невеста"
+        }
+    ]
+}
