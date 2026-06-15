@@ -9,21 +9,21 @@ function loadComponent(selector, url, callback) {
 }
 
 function initHeader() {
-    // Active nav link
     const currentPath = window.location.pathname;
-    document.querySelectorAll('#navbar-menu a').forEach(link => {
+
+    // Active nav link
+    document.querySelectorAll('.navbar a').forEach(link => {
         if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
+            link.parentElement.classList.add('active');
         }
     });
 
-    // Mobile toggle
-    const toggle = document.getElementById('navbar-toggle');
-    const menu = document.getElementById('navbar-menu');
-    if (toggle && menu) {
+    // Mobile menu toggle (hamburger)
+    const toggle = document.getElementById('menu');
+    const nav = document.getElementById('navbar');
+    if (toggle && nav) {
         toggle.addEventListener('click', () => {
-            menu.classList.toggle('open');
-            toggle.classList.toggle('open');
+            nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
         });
     }
 }
