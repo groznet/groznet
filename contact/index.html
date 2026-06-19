@@ -26,8 +26,7 @@
         <!-- Manifest -->
         <link rel="manifest" href="manifest.json">
 
-        <!-- Google reCaptcha -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="/assets/js/tailwind.js"></script>
         
         <noscript>
             <meta http-equiv="refresh" content="0; url=/noscript.html">
@@ -37,63 +36,162 @@
         <noscript>
             <div><img src="https://mc.yandex.ru/watch/95233076" style="position:absolute;left:-9999px" alt=""></div>
         </noscript>
-
-        <!-- Mail Ru domain ownership approval -->
-        <meta name="mailru-domain" content="TGmmvFa7qB6MqKOy" />
+        <script>
+            tailwind.config = {
+                theme: {
+                    container: {
+                        center: true,
+                        padding: '16px',
+                        screens: {
+                            DEFAULT: '1280px'
+                        }
+                    },
+                    extend: {
+                        fontFamily: {
+                            serif: ['serif'],
+                            sans: ['Arial', 'Helvetica', 'sans-serif']
+                        }
+                    }
+                },
+                corePlugins: {
+                    preflight: true
+                }
+            }
+        </script> 
     </head>
     <body>
         <header id="header"></header>
         <!-- End Header -->
-        <section id="contact-page" style="background: #00bcd4 url('/assets/images/contact-pattern-bg.png'); color: #ffffff;">
-            <div class="container">
-                <div class="breadcrumb">
-                    <p class="mt-0">
-                        <a class="white-text" href="/">Главная</a> &#187;
-                        <span>Контакты</span>
-                    </p>
-                    <h2 class="font-serif mb-0">Контакты</h2>
+
+        <section id="contact-breadcrumb-section" class="py-6 md:py-8 bg-neutral-50 dark:bg-neutral-950 border-b border-neutral-200/50 dark:border-neutral-900 transition-colors duration-300">
+            <div class="container mx-auto">
+                <div class="flex flex-col space-y-4">
+                    
+                    <nav class="flex items-center space-x-2 text-xs md:text-sm font-medium text-neutral-500 dark:text-neutral-400">
+                        <a href="/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center gap-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            Главная
+                        </a>
+                        
+                        <span class="text-neutral-300 dark:text-neutral-700 select-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                        </span>
+                        
+                        <span class="text-neutral-700 dark:text-neutral-200 font-semibold">Контакты</span>
+                    </nav>
+
+                    <div class="space-y-2">
+                        <h1 class="text-3xl md:text-4xl font-serif font-bold text-neutral-700 dark:text-white tracking-tight">
+                            Контакты
+                        </h1>
+                        <div class="h-1 w-12 bg-blue-600 rounded-full"></div>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container">
-                <p>Если у Вас остались ещё какие-либо вопросы к нам — мы с удовольствием на них ответим! Для этого позвоните нам по телефону: 8(929)-888-33-27, или напишите письмо на info@groznet.com, или отправьте нам пиьсмо через форму ниже.</p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2440.750374436978!2d45.68218572287002!3d43.3235173723845!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1667738654524!5m2!1sen!2sru" width="600" height="435" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+        <section id="contact-content-section" class="py-14 md:py-18 bg-white dark:bg-neutral-900 transition-colors duration-300">
+            <div class="container mx-auto">
+                
+                <p class="text-neutral-600 dark:text-neutral-400 text-base leading-relaxed mb-12">
+                    Если у Вас остались ещё какие-либо вопросы к нам — мы с удовольствием на них ответим! 
+                    Для этого позвоните нам по телефону: <a href="tel:89298883327" class="text-blue-600 dark:text-blue-400 font-bold hover:underline">8(929)-888-33-27</a>, 
+                    напишите на <a href="mailto:info@groznet.com" class="text-blue-600 dark:text-blue-400 font-bold hover:underline">info@groznet.com</a> 
+                    или отправьте сообщение через форму ниже.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                    
+                    <div class="w-full aspect-video lg:aspect-square lg:h-[530px] rounded-2xl overflow-hidden shadow-sm border border-neutral-100 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-800">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Грозный&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                    <div class="">
-                        <form method="POST">
-                            <label class="w-full" for="fname">Ваше имя</label>
-                            <input disabled class="w-full mb-4" type="text" required id="fname" name="fname" placeholder="Введите ваше имя..">
 
-                            <label class="w-full" for="email">Ваш Email</label>
-                            <input disabled class="w-full mb-4" type="email" required id="email" name="email" placeholder="Введите ваш email..">
+                    <div class="w-full">
+                        <form
+                            class="space-y-5"
+                            onsubmit="alert('Форма отключена и не принимает данные.'); return false;"
+                        >
 
-                            <label class="w-full" for="department">Отдел</label>
-                            <select class="w-full mb-4" required id="department" name="department">
-                                <option value="australia">Разработка сайта</option>
-                                <option value="usa">Обслуживание</option>
-                                <option value="usa">Консультация</option>
-                                <option value="usa">Другой</option>
-                            </select>
+                            <div>
+                                <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-1.5" for="fname">Ваше имя</label>
+                                <input
+                                    class="w-full px-4 py-2 rounded-md border border-neutral-200 dark:border-neutral-700 bg-transparent text-neutral-900 dark:text-white placeholder-neutral-400"
+                                    type="text"
+                                    id="fname"
+                                    name="fname"
+                                    placeholder="Введите ваше имя.."
+                                    disabled
+                                >
+                            </div>
 
-                            <label class="w-full" for="subject">Сообщение</label>
-                            <textarea disabled class="w-full mb-4" required id="subject" name="subject" placeholder="Введите ваше сообщение.." style="height:165px"></textarea>
+                            <div>
+                                <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-1.5" for="email">Ваш Email</label>
+                                <input
+                                    class="w-full px-4 py-2 rounded-md border border-neutral-200 dark:border-neutral-700 bg-transparent text-neutral-900 dark:text-white placeholder-neutral-400"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Введите ваш email.."
+                                    disabled
+                                >
+                            </div>
 
-                            <!-- reCAPTCHA v2 checkbox -->
-                            <div class="g-recaptcha" data-sitekey="6LemYY0qAAAAAHnCaga5OsuPUZ6qcC65pJNJBmNw"></div>
+                            <div>
+                                <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-1.5" for="department">Отдел</label>
+                                <select
+                                    class="w-full px-4 py-2 rounded-md border border-neutral-200 dark:border-neutral-700 bg-transparent text-neutral-900 dark:text-white appearance-none"
+                                    id="department"
+                                    name="department"
+                                    disabled
+                                >
+                                    <option value="development">Разработка сайта</option>
+                                    <option value="maintenance">Обслуживание</option>
+                                    <option value="consultation">Консультация</option>
+                                    <option value="other">Другой</option>
+                                </select>
+                            </div>
 
-                            <input disabled type="submit" value="Отправить">
+                            <div>
+                                <label class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-1.5" for="subject">Сообщение</label>
+                                <textarea
+                                    class="w-full px-4 py-2 rounded-md border border-neutral-200 dark:border-neutral-700 bg-transparent text-neutral-900 dark:text-white placeholder-neutral-400 resize-none h-36"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Введите ваше сообщение.."
+                                    disabled
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="w-full sm:w-auto px-4 py-2 bg-blue-600 text-white font-bold text-sm rounded-md"
+                                disabled
+                            >
+                                Отправить сообщение
+                            </button>
+
+                            <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed mt-4">
+                                Обратите внимание: форма обратной связи представлена исключительно в информационных целях. Введённые данные не отправляются, не сохраняются и не обрабатываются. В настоящее время сайт не осуществляет сбор и обработку персональных данных через данную форму. Для связи с нами используйте телефон или адрес электронной почты, указанные выше.
+                            </p>
+
                         </form>
                     </div>
+
                 </div>
-            </div>        
-        </section>
+            </div>
+        </section>        
 
         <!-- FOOTER -->
-        <footer id="footer"></footer>
+        <footer id="footer" class="bg-neutral-50 dark:bg-neutral-950 text-neutral-500 dark:text-neutral-400 text-[13px] pt-16 pb-8 border-t border-neutral-200/50 dark:border-neutral-900 transition-colors duration-300"></footer>
         <!-- Footer -->
         <script src="https://kit.fontawesome.com/1b1dcc9abc.js" crossorigin="anonymous"></script>
         <script src="/assets/js/main.js"></script>

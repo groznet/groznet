@@ -23,6 +23,13 @@
   ],
   "projects": [
     {
+      "title": "MedTechFarm",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/medtechfarm.jpg",
+      "url": "https://medtechfarm.ru",
+      "description": "Медицинское и лабораторное оборудование"
+    },
+    {
       "title": "Pitomnik95",
       "category": "ecommerce-sites",
       "image": "/assets/images/portfolio/ecommerce/Садовый декоративный Pitomnik95.jpg",
@@ -30,11 +37,46 @@
       "description": "Садовый декоративный Pitomnik95"
     },
     {
+      "title": "Курорт Серноводск Кавказ",
+      "category": "portal-sites",
+      "image": "/assets/images/portfolio/portals/kurort-sernovodsk.jpg",
+      "url": "https://kurort-sernovodsk.ru",
+      "description": "Санаторно-курортный комплекс"
+    },
+    {
+      "title": "Серноводская",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/sernovodsk.jpg",
+      "url": "https://sernovodsk.ru",
+      "description": "Производство минеральной воды"
+    },
+    {
       "title": "DjigitFitness",
       "category": "ecommerce-sites",
       "image": "/assets/images/portfolio/ecommerce/Фитнес Оборудование DjigitFitness.jpg",
       "url": "http://djigitfitness.ru/",
       "description": "Фитнес Оборудование DjigitFitness"
+    },
+    {
+      "title": "Muzaev Company",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/muzaev-company.jpg",
+      "url": "https://muzaev-company.ru",
+      "description": "Строительная компания"
+    },
+    {
+      "title": "РЦМК ЧР",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/rcmkchr.jpg",
+      "url": "https://rcmkchr.ru",
+      "description": "Республиканский центр медицины катастроф"
+    },
+    {
+      "title": "Besa Auto",
+      "category": "ecommerce-sites",
+      "image": "/assets/images/portfolio/ecommerce/besa-auto.jpg",
+      "url": "https://besa-auto.ru",
+      "description": "Пригон и продажа автомобилей"
     },
     {
       "title": "Азалия",
@@ -86,6 +128,34 @@
       "description": "HizbroFit — Тренажерное оборудование"
     },
     {
+      "title": "Администрация Наурского района",
+      "category": "portal-sites",
+      "image": "/assets/images/portfolio/portals/naur-admin.jpg",
+      "url": "https://naur-admin.ru",
+      "description": "Официальный портал администрации"
+    },
+    {
+      "title": "Gassa",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/gassa.jpg",
+      "url": "https://gassa.ru",
+      "description": "Инжиниринговые услуги и строительство"
+    },
+    {
+      "title": "Окна Грозный",
+      "category": "landing-pages",
+      "image": "/assets/images/portfolio/landing/oknovgrozny.jpg",
+      "url": "https://oknovgrozny.ru",
+      "description": "Производство и установка пластиковых окон"
+    },
+    {
+      "title": "Apex Lift",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/apexlift.jpg",
+      "url": "https://apexlift.ru",
+      "description": "Поставка и обслуживание лифтового оборудования"
+    },
+    {
       "title": "PSNGAME",
       "category": "ecommerce-sites",
       "image": "/assets/images/portfolio/catalog/PSNGAME.jpg",
@@ -93,11 +163,53 @@
       "description": "Магазин игр PSNGAME"
     },
     {
+      "title": "Eminense",
+      "category": "ecommerce-sites",
+      "image": "/assets/images/portfolio/ecommerce/eminense.jpg",
+      "url": "https://eminense.ru",
+      "description": "Брендовая одежда и аксессуары"
+    },
+    {
+      "title": "Autoliba",
+      "category": "ecommerce-sites",
+      "image": "/assets/images/portfolio/ecommerce/autoliba.jpg",
+      "url": "https://autoliba.ru",
+      "description": "Запчасти и автотовары"
+    },
+    {
+      "title": "NSPortal CHR",
+      "category": "portal-sites",
+      "image": "/assets/images/portfolio/portals/nsportal.jpg",
+      "url": "https://nsportal.ru",
+      "description": "Образовательный портал Чеченской Республики"
+    },
+    {
+      "title": "Инновационный Реабцентр",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/innovationreabcenter.jpg",
+      "url": "https://innovationreabcenter.ru",
+      "description": "Центр медицинской реабилитации"
+    },
+    {
+      "title": "Klempner Hand",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/klempnerhand.jpg",
+      "url": "https://klempnerhand.de",
+      "description": "Сантехнические услуги в Германии"
+    },
+    {
       "title": "Финансовая грамотность ЧР",
       "category": "portal-sites",
       "image": "/assets/images/portfolio/portals/Финансовая грамотность ЧР - FINGRAM95.jpg",
       "url": "https://fingram95.ru/",
       "description": "Финансовая грамотность ЧР"
+    },
+    {
+      "title": "Шейх Мансур",
+      "category": "portal-sites",
+      "image": "/assets/images/portfolio/portals/sheymansur.jpg",
+      "url": "https://sheymansur.ru",
+      "description": "Историко-культурный портал"
     },
     {
       "title": "Ипотечный Центр",
@@ -112,6 +224,41 @@
       "image": "/assets/images/portfolio/corporate/Штукатурка95.jpg",
       "url": "",
       "description": "Механизированная штукатурка в Чеченской Республике"
+    },
+    {
+      "title": "Вестник ЧР",
+      "category": "portal-sites",
+      "image": "/assets/images/portfolio/portals/Vistnik.ru.jpg",
+      "url": "https://vestnik.ru/",
+      "description": "Информационное агентство Вестник ЧР"
+    },
+    {
+      "title": "VikkiEmlak",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/VikkieEmlak.jpg",
+      "url": "https://vikkiemlak.com/",
+      "description": "VikkiEmlak — Недвижимость в Турции"
+    },
+    {
+      "title": "Мой ЧГПУ",
+      "category": "portal-sites",
+      "image": "/assets/images/portfolio/portals/mychgpu.jpg",
+      "url": "https://mychgpu.ru",
+      "description": "Внутренний портал студентов и преподавателей"
+    },
+    {
+      "title": "Климат Комфорт",
+      "category": "ecommerce-sites",
+      "image": "/assets/images/portfolio/catalog/ClimatComfort.jpg",
+      "url": "https://climat-comfort-group.ru/",
+      "description": "Климатические системы и кондиционирование"
+    },
+    {
+      "title": "Лизама",
+      "category": "ecommerce-sites",
+      "image": "/assets/images/portfolio/ecommerce/lizama.jpg",
+      "url": "https://lizama.ru",
+      "description": "Интернет-магазин одежды и текстиля"
     },
     {
       "title": "ArcherClub",
@@ -133,6 +280,20 @@
       "image": "/assets/images/portfolio/catalog/ШашлыкМашлык.jpg",
       "url": "",
       "description": "Доставка еды ШашлыкМашлык"
+    },
+    {
+      "title": "BioProductLine",
+      "category": "ecommerce-sites",
+      "image": "/assets/images/portfolio/ecommerce/bioproductline.jpg",
+      "url": "https://bioproductline.com",
+      "description": "Органическая продукция и БАДы"
+    },
+    {
+      "title": "SportAnimal",
+      "category": "ecommerce-sites",
+      "image": "/assets/images/portfolio/catalog/Магазин спорт питания - SportAnimal.jpg",
+      "url": "https://sportanimal.ru/",
+      "description": "Магазин спортивного питания SportAnimal"
     },
     {
       "title": "ООО ЖИЛЬЕ",
@@ -163,6 +324,13 @@
       "description": "NajahRoom — Исламский образовательный中心"
     },
     {
+      "title": "Morgan Khant",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/morgankhant.jpg",
+      "url": "https://morgankhant.ru",
+      "description": "Консалтинговые и юридические услуги"
+    },
+    {
       "title": "VainakhCorp",
       "category": "corporate-sites",
       "image": "/assets/images/portfolio/corporate/VainakhCorp.jpg",
@@ -184,11 +352,25 @@
       "description": "Магазин косметики Zara"
     },
     {
-      "title": "Грозненская Школа Дизайна",
+      "title": "Hotel Chechen",
+      "category": "portal-sites",
+      "image": "/assets/images/portfolio/portals/hotelchechen.jpg",
+      "url": "https://hotelchechen.ru",
+      "description": "Каталог и бронирование отелей Чечни"
+    },
+    {
+      "title": "SD95",
       "category": "corporate-sites",
       "image": "/assets/images/portfolio/corporate/Компьютерные-курсы-SD95.jpg",
       "url": "https://sd95.ru/",
       "description": "Компьютерные курсы SD95"
+    },
+    {
+      "title": "Ансамбль Барт",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/ansambl-bart.jpg",
+      "url": "https://ansambl-bart.ru",
+      "description": "Сайт государственного ансамбля танца"
     },
     {
       "title": "Грозненский рабочий",
@@ -196,6 +378,13 @@
       "image": "/assets/images/portfolio/portals/Грозненский рабочий GrozRab.jpg",
       "url": "https://grozrab.ru/",
       "description": "Общественно-политическая газета"
+    },
+    {
+      "title": "Lash Extension",
+      "category": "landing-pages",
+      "image": "/assets/images/portfolio/landing/lashextension.jpg",
+      "url": "https://lashextension.be",
+      "description": "Студия наращивания ресниц"
     },
     {
       "title": "Alfiya",
@@ -289,6 +478,13 @@
       "description": "Интеллектуальный Кавказ"
     },
     {
+      "title": "Модульбанк Партнер",
+      "category": "landing-pages",
+      "image": "/assets/images/portfolio/landing/modulbank.jpg",
+      "url": "https://modulbank.ru",
+      "description": "Открытие расчетных счетов для бизнеса"
+    },
+    {
       "title": "DaimZap",
       "category": "ecommerce-sites",
       "image": "/assets/images/portfolio/ecommerce/Магазин-автозапчастей-DaimZap.jpg",
@@ -296,11 +492,25 @@
       "description": "Магазин автозапчастей DaimZap"
     },
     {
+      "title": "Swoilux",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/swoilux.jpg",
+      "url": "https://swoilux.com",
+      "description": "Поставка смазочных материалов"
+    },
+    {
       "title": "The Team Real Estate",
       "category": "corporate-sites",
       "image": "/assets/images/portfolio/corporate/theteamrealestate.jpg",
       "url": "https://theteamrealestate.com",
       "description": "Агентство недвижимости в ОАЭ"
+    },
+    {
+      "title": "China Entegra",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/china-entegra.jpg",
+      "url": "https://china-entegra.com",
+      "description": "Логистика и поставки товаров из Китая"
     },
     {
       "title": "Sadya Lab",
@@ -387,11 +597,11 @@
       "description": "Юридическое сопровождение бизнеса и граждан"
     },
     {
-      "title": "Кафе Вайнах",
-      "category": "landing-pages",
-      "image": "/assets/images/portfolio/landing/vainakh-cafe.jpg",
-      "url": "https://vainakh-cafe.ru",
-      "description": "Кавказский вкус на трассе"
+      "title": "Школа Беркут",
+      "category": "corporate-sites",
+      "image": "/assets/images/portfolio/corporate/shkola-berkut.jpg",
+      "url": "https://shkola-berkut.ru",
+      "description": "Спортивная академия единоборств"
     }
   ]
 }

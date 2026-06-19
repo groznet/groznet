@@ -1,0 +1,84 @@
+{
+  "partners": [
+    {
+      "name": "Садовый центр Азалия",
+      "logo": "/assets/images/partners/azaliya.png",
+      "url": ""
+    },
+    {
+      "name": "Фитнес оборудование HIZBROFIT",
+      "logo": "/assets/images/partners/hizbrofit.png",
+      "url": ""
+    },
+    {
+      "name": "Видеостудия First-Look",
+      "logo": "/assets/images/partners/first-look.png",
+      "url": ""
+    },
+    {
+      "name": "Поисковое движение России по ЧР (ПДРЧР)",
+      "logo": "/assets/images/partners/pdrchr.png",
+      "url": ""
+    },
+    {
+      "name": "ITCHR — Услуги для игровых клубов",
+      "logo": "/assets/images/partners/itchr.png",
+      "url": ""
+    },
+    {
+      "name": "NajahRoom — Исламский образовательный центр",
+      "logo": "/assets/images/partners/najahroom.png",
+      "url": ""
+    },
+    {
+      "name": "МАОО Национальный Совет",
+      "logo": "/assets/images/partners/nacsovet.png",
+      "url": ""
+    },
+    {
+      "name": "Магазин косметики Zara",
+      "logo": "/assets/images/partners/zara-cosmetics.png",
+      "url": ""
+    },
+    {
+      "name": "Компьютерные курсы SD95",
+      "logo": "/assets/images/partners/sd95.png",
+      "url": ""
+    },
+    {
+      "name": "Благотворительный фонд Адам",
+      "logo": "/assets/images/partners/adamfond.png",
+      "url": ""
+    },
+    {
+      "name": "Вахта Памяти Терский Рубеж",
+      "logo": "/assets/images/partners/terskiyrubezh.png",
+      "url": ""
+    },
+    {
+      "name": "Электроника и аксессуары Luna95",
+      "logo": "/assets/images/partners/luna95.png",
+      "url": ""
+    },
+    {
+      "name": "Интеллектуальный Кавказ",
+      "logo": "/assets/images/partners/intelkavkaz.png",
+      "url": ""
+    },
+    {
+      "name": "Магазин автозапчастей DaimZap",
+      "logo": "/assets/images/partners/daimzap.png",
+      "url": ""
+    },
+    {
+      "name": "Юридический центр «ГиД»",
+      "logo": "/assets/images/partners/gidlaw.png",
+      "url": ""
+    },
+    {
+      "name": "Оружейный магазин ArcherClub",
+      "logo": "/assets/images/partners/archerclub.png",
+      "url": ""
+    }
+  ]
+}

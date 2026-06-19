@@ -26,8 +26,7 @@
         <!-- Manifest -->
         <link rel="manifest" href="manifest.json">
 
-        <!-- Google reCaptcha -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="/assets/js/tailwind.js"></script>
         
         <noscript>
             <meta http-equiv="refresh" content="0; url=/noscript.html">
@@ -37,141 +36,28 @@
         <noscript>
             <div><img src="https://mc.yandex.ru/watch/95233076" style="position:absolute;left:-9999px" alt=""></div>
         </noscript>
-
-        <style>
-            header .topbar {
-                font-size: 14px;
-                border-bottom: 1px solid #eee
-            }
-            
-            header .midbar,
-            header .midbar a {
-                color: #444;
-            }
-
-            header .midbar p {
-                font-size: 15px;
-            }
-
-            /* Logo styles */
-            header .midbar #logo img {
-                width: 2.8em
-            }
-
-            header .midbar #logo p {
-                margin-left: -1.4em
-            }
-
-            header .midbar #logo p .heading {
-                font-size: 28px;
-                text-shadow: 1px 1px 3px rgb(100 115 125), 0 0 3px #92a6ae;
-                color: #fefefe
-            }
-            /* End: Logo styles */
-
-            header .midbar .cta-oder {
-                background: #52ab98;
-                border: none;
-                padding: .5em 1em;
-                border-radius: 15px
-            }
-
-            header .navmenu {
-                border-top: 1px solid #eee;
-                border-bottom: 1px solid #eee;
-            }
-
-            header .navmenu i {
-                padding-left: 15px;
-            }
-
-            header .navmenu nav ul {
-                line-height: 45px
-            }
-
-            header .navmenu #menu,
-            header .navmenu #search-form input,
-            header .navmenu #search-form input::placeholder,
-            header .navmenu #search-form input[type=submit],
-            header .navmenu nav li a {
-                color: #555
-            }
-
-            header .navmenu nav ul {
-                list-style: none;
-            }
-
-            header .navmenu nav li a {
-                padding: 1em;
-                text-decoration: none
-            }
-
-            header .navmenu nav li:hover {
-                background: #fbfafa
-            }
-
-            header .navmenu #search-form input {
-                padding: .5em
-            }
-
-            header .navmenu #menu,
-            header .navmenu #search-form {
-                line-height: 46px;
-            }
-
-            header .navmenu #search-form input {
-                border: 1px solid #eee
-            }
-
-            /* Mobile */
-            @media screen and (max-width:768px) {
-                header .navmenu #search-form {
-                    padding-right: 15px;
-                }
-
-                header .navmenu nav li {
-                    border-top: 1px solid #eee;
-                }
-                header .navmenu nav li a {
-                    text-decoration: none;
-                    padding: 0 15px;
-                }
-
-                header #navbar {
-                    display: none;
+        <script>
+            tailwind.config = {
+                theme: {
+                    container: {
+                        center: true,
+                        padding: '16px',
+                        screens: {
+                            DEFAULT: '1280px'
+                        }
+                    },
+                    extend: {
+                        fontFamily: {
+                            serif: ['serif'],
+                            sans: ['Arial', 'Helvetica', 'sans-serif']
+                        }
+                    }
+                },
+                corePlugins: {
+                    preflight: true
                 }
             }
-            /* End: Mobile */
-
-            /* Desktop */
-            @media screen and (min-width:768px) {
-                #navbar {
-                    display: block;
-                }                
-
-                header .midbar #contacts {
-                    background-image: url(/assets/images/contacts-bg.png);
-                    background-repeat: no-repeat;
-                }
-
-                header .midbar #address {
-                    background-image: url(/assets/images/address-bg.png)
-                }
-
-                /* Hide menu toggle on desktop */
-                header .navmenu #menu {
-                    display: none;
-                }
-
-                header .navmenu nav li {
-                    display: inline-block
-                }
-            }
-            /* End: Desktop */
-
-        </style>
-        <!-- Mail Ru domain ownership approval -->
-        <meta name="mailru-domain" content="TGmmvFa7qB6MqKOy" />
+        </script> 
     </head>
     <body>
         <header>

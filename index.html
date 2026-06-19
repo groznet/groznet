@@ -22,17 +22,14 @@
 
         <!-- Main CSS -->   
         <link rel="stylesheet" href="/assets/css/style.css">
+        <script src="/assets/js/tailwind.js"></script>
 
         <!-- Manifest -->
         <link rel="manifest" href="manifest.json">
-
-        <!-- Google reCaptcha -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         
         <noscript>
             <meta http-equiv="refresh" content="0; url=/noscript.html">
         </noscript>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript">!function(e,t,c,n,r,a,m){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date;for(var s=0;s<document.scripts.length;s++)if(document.scripts[s].src===n)return;a=t.createElement(c),m=t.getElementsByTagName(c)[0],a.async=1,a.src=n,m.parentNode.insertBefore(a,m)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js"),ym(95233076,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
         <noscript>
             <div><img src="https://mc.yandex.ru/watch/95233076" style="position:absolute;left:-9999px" alt=""></div>
@@ -48,7 +45,7 @@
                         center: true,
                         padding: '16px',
                         screens: {
-                            DEFAULT: '1140px'
+                            DEFAULT: '1280px'
                         }
                     },
                     extend: {
@@ -70,499 +67,726 @@
         <!-- End Header -->
 
         <!-- Main homepage slider -->
-        <link rel="stylesheet" href="/assets/css/slider.min.css">
 
         <!-- Main Slider Section -->
-        <section id="mainSlider">
-            <div class="slides">
-                <!-- Slide 1 
-                Each slide full page width.. -->
-                <div class="slider">
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-txt">
-                                <h1 class="font-serif">Создание сайтов с нуля</h1>
-                                <p>Каждый сайт должен быть уникальным, чтобы соответствовать потребностям вашего бизнеса и аудитории. Поэтому мы создаем сайты с нуля, благодаря чему, каждый сайт работает быстро и эффективно.</p>
-                                <!-- <a href="/contact">Заказать</a> -->
-                            </div>
-                        </div>
-                        <div class="image"><img alt="Создание сайтов в Грозном" src="/assets/images/slides/Создание-сайтов-в-Грозном-370.jpg"></div>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="slider" style="background:#00a1cd">
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-txt">
-                                <h1 class="white-text font-serif">Поддержка и обслуживание</h1>
-                                <p class="white-text">Мы оказываем услуги по техническому сопровождению и поддержке сайтов в Грозном. Прочрачная система выполнения заявок. Десятки ресурсов на поддержке. Мы надежный партнер для развития вашего сайта.</p>
-                                <!-- <a href="/contact">Заказать</a> -->
-                            </div>
-                        </div>
-                        <div class="image"><img alt="Создание сайтов в Грозном" src="/assets/images/slides/slide-1.jpg"></div>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="slider" style="background:#f58823">
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-txt">
-                                <h1 class="white-text font-serif">Разработка сайта на CMS</h1>
-                                <p class="white-text">Мы также разрабатываем сайты на базе всех популярных CMS и framework: 1С-Битрикс, WordPress, Laravel, Joomla Если вам нужна такая услуга, мы готовы предложить вам самые широкие вариации работы с движками.</p>
-                            </div>
-                        </div>
-                        <div class="image"><img alt="Создание сайтов в Грозном" src="/assets/images/slides/slide-2.jpg"></div>
-                    </div>
-                </div>
-                <!-- Slide 4 -->
-                <div class="slider" style="background:#8564ab">
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-txt">
-                                <h1 class="white-text font-serif">Разработка приложений</h1>
-                                <p class="white-text">Разработка мобильного приложения — это прежде всего ориентация на конечного потребителя, на Вашу целевую аудиторию. Наша основная цель — сделать его прибыльным. Все просто: зарабатываете Вы — зарабатываем мы.</p>
-                            </div>
-                        </div>
-                        <div class="image"><img alt="Создание сайтов в Грозном" src="/assets/images/slides/slide-3.jpg"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End: Main Slider Section -->
-        <!-- Services Section -->
-        <section class="curved-shadow" id="service-section">
-            <div class="container flex flex-wrap space-between gap-4">
-                <div class="section-header">
-                    <h1 class="text-center font-serif">Наши Услуги</h1>
-                    <p class="text-center">Создание Сайтов в Грозном от визиток до Интернет-магазинов. А также контекстное и SEO-продвижение в поисковых системах, сервисы повышения продаж и техническую поддержку по системе управления.</p>
-                </div>        
-                <div class="grid grid-cols-2 grid-cols-3 gap-4 text-center">     
-                    <div class="p-4 border">
-                        <div class="image">
-                            <img alt="Разработка Веб-Сайта" src="/assets/images/services/web-development.png">
-                        </div>
-                        <h3 class="font-serif">Разработка Веб-Сайта</h3>
-                        <p class="description">Применяем современные методы программирования что позволяет нам разрабатывать сайты любой сложности под каждаго клиента для решения сложных задач</p>
-                    </div>
-                    <div class="p-4 border">
-                        <div class="image">
-                            <img alt="Создание Веб-Дизайна" src="/assets/images/services/web-design.png">
-                        </div>
-                        <h3 class="font-serif">Создание Веб-Дизайна</h3>
-                        <p class="description">Рисуем страницы учитывая основные пожелания клиента, вносим корректировки в макеты до полного согласования на основе проведенной предпроектной работы.</p>
-                    </div>
-                    <div class="p-4 border">
-                        <div class="image">
-                            <img alt="SEO продвижение сайта" src="/assets/images/services/computer-vision.png">
-                        </div>
-                        <h3 class="font-serif">SEO продвижение сайта</h3>
-                        <p class="description">Привлекаем максимальное число клиентов из всех источников поиска, продвигаем сайт чтобы найти клиентов заинтересованных в ваших товарах и услугах.</p>
-                    </div>
-                    <div class="p-4 border">
-                        <div class="image">
-                            <img alt="Техническая поддержка" src="/assets/images/services/machine-learning.png">
-                        </div>
-                        <h3 class="font-serif">Техническая поддержка</h3>
-                        <p class="description">Предлагаем полный комплекс услуг по техническому сопровождению и обслуживанию сайтов от наших экспертов с многолетним опытом и экспертизой.</p>
-                    </div>
-                    <div class="p-4 border">
-                        <div class="image">
-                            <img alt="Создание сайта на CMS" src="/assets/images/services/big-data.png">
-                        </div>
-                        <h3 class="font-serif">Создание сайта на CMS</h3>
-                        <p class="description">Мы делаем полноценные динамически наполняемые сайты на CMS. Это значит, что вы сможете самостоятельно управлять контентом, посетителями, и дизайном.</p>
-                    </div>
-                    <div class="p-4 border">
-                        <div class="image">
-                            <img alt="Разработка приложения" src="/assets/images/services/app-development.png">
-                        </div>
-                        <h3 class="font-serif">Разработка приложения</h3>
-                        <p class="description">Разрабатываем мобильные приложения для Android, и iOS. Помогаем опубликовать и пройти проверки в магазинах. Даем рекомендации по продвижению.</p>
-                    </div>    
-                </div>
-            </div>
-        </section>
-        <!-- End: Services Section -->
-        <!-- Portfolio Section -->
-        <section id="portfolio-section" style="background: #2196F3">
-            <div class="container">
-                <div class="section-header">
-                    <h1 class="text-center white-text font-serif">Последние Работы</h1>
-                    <div class="text-center" id="filter-buttons">
-                        <!-- Buttons rendered by JS -->
-                    </div>
-                </div>
-                <br>
-                <div class="section-grid grid grid-cols-2 grid-cols-3 gap-4" id="projects-grid">
-                    <!-- Projects rendered by JS -->
-                </div>
-                <p style="text-align:center;">
-                    <a href="/projects" style="color: #fff !important">
-                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Посмотреть Все Работы
-                    </a>
-                </p>
-            </div>
-        </section>
-
-        <script>
-            fetch('/data/portfolio.json')
-                .then(res => res.json())
-                .then(data => {
-                    // Filter out 'all-sites' from categories
-                    const homeCategories = data.categories.filter(cat => cat.id !== 'all-sites');
-                    
-                    // Optional: Filter out projects that only belong to 'all-sites' 
-                    // (If a project has multiple categories, it will still show under the others)
-                    const homeProjects = data.projects.filter(project => project.category !== 'all-sites');
-
-                    renderButtons(homeCategories);
-                    renderProjects(homeProjects);
-
-                    // Set the first remaining category (Интернет магазины) as default active
-                    if (homeCategories.length > 0) {
-                        filterSelection(homeCategories[0].id);
+        <div class="relative w-full overflow-hidden h-[50vh] md:h-[65vh] transition-colors duration-700 ease-in-out"
+            x-data="{ 
+                activeSlide: 1, 
+                autoplayTimer: null,
+                slides: [],
+                isLoading: true,
+                init() {
+                    fetch('/data/slides.json')
+                        .then(res => res.json())
+                        .then(data => {
+                            this.slides = data.slides;
+                            this.isLoading = false;
+                            this.startAutoplay();
+                        })
+                        .catch(err => console.error('Ошибка загрузки слайдов:', err));
+                },
+                startAutoplay() {
+                    this.stopAutoplay();
+                    if(this.slides.length > 0) {
+                        this.autoplayTimer = setInterval(() => { this.next() }, 6000);
                     }
-                });
+                },
+                stopAutoplay() {
+                    if (this.autoplayTimer) clearInterval(this.autoplayTimer);
+                },
+                next() {
+                    this.activeSlide = this.activeSlide === this.slides.length ? 1 : this.activeSlide + 1;
+                    this.startAutoplay();
+                },
+                prev() {
+                    this.activeSlide = 1 ? this.slides.length : this.activeSlide - 1;
+                    this.startAutoplay();
+                },
+                setSlide(id) {
+                    this.activeSlide = id;
+                    this.startAutoplay();
+                },
+                getCurrentBg() {
+                    if (this.isLoading || this.slides.length === 0) return 'bg-neutral-900';
+                    const current = this.slides.find(s => s.id === this.activeSlide);
+                    return current ? current.bgColor : 'bg-neutral-900';
+                }
+            }"
+            :class="getCurrentBg()"
+            @mouseenter="stopAutoplay()"
+            @mouseleave="startAutoplay()">
 
-            function renderButtons(categories) {
-                const container = document.getElementById('filter-buttons');
-                container.innerHTML = categories.map((cat, i) => `
-                    <button class="btn ${i === 0 ? 'active' : ''}" onclick="filterSelection('${cat.id}')">
-                        ${cat.title}
-                    </button>
-                `).join('');
-            }
+            <div x-show="isLoading" class="absolute inset-0 w-full h-full bg-neutral-900 animate-pulse flex items-center justify-center">
+                <div class="space-y-4 w-full max-w-xl px-4">
+                    <div class="h-8 bg-neutral-800 rounded w-3/4"></div>
+                    <div class="h-4 bg-neutral-800 rounded w-full"></div>
+                    <div class="h-10 bg-neutral-800 rounded w-1/4"></div>
+                </div>
+            </div>
 
-            function renderProjects(projects) {
-                const grid = document.getElementById('projects-grid');
-                grid.innerHTML = projects.map(project => `
-                    <div class="project-item ${project.category} w-1-3 bg-white p-4">
-                        <img class="w-full" alt="${project.description}" src="${project.image}">
-                        <p>${project.description}</p>
-                        <a href="${project.url || '#'}">Перейти</a>
+            <div x-show="!isLoading" style="display: none;" class="relative w-full h-full container mx-auto px-4 sm:px-8 lg:px-16">
+                
+                <template x-for="slide in slides" :key="slide.id">
+                    <div class="absolute inset-x-4 sm:inset-x-8 lg:inset-x-16 top-0 bottom-0 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-8"
+                        x-show="activeSlide === slide.id"
+                        x-transition:enter="transition opacity duration-500 ease-out"
+                        x-transition:enter-start="opacity-0"
+                        x-transition:enter-end="opacity-100"
+                        x-transition:leave="transition opacity duration-500 ease-in"
+                        x-transition:leave-start="opacity-100"
+                        x-transition:leave-end="opacity-0">
+                        
+                        <div class="lg:col-span-6 order-2 lg:order-1 text-white flex flex-col justify-center space-y-4 md:space-y-6 z-10">
+                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight"
+                                x-show="activeSlide === slide.id"
+                                x-transition:enter="transition all duration-700 delay-200 ease-out"
+                                x-transition:enter-start="opacity-0 translate-y-6"
+                                x-transition:enter-end="opacity-100 translate-y-0">
+                                <span x-text="slide.title"></span>
+                            </h1>
+
+                            <p class="text-base md:text-lg lg:text-xl text-white/90 font-medium max-w-xl leading-relaxed"
+                            x-show="activeSlide === slide.id"
+                            x-transition:enter="transition all duration-700 delay-[400ms] ease-out"
+                            x-transition:enter-start="opacity-0 translate-y-6"
+                            x-transition:enter-end="opacity-100 translate-y-0"
+                            x-text="slide.text">
+                            </p>
+
+                            <div x-show="activeSlide === slide.id"
+                                x-transition:enter="transition all duration-700 delay-[600ms] ease-out"
+                                x-transition:enter-start="opacity-0 translate-y-4"
+                                x-transition:enter-end="opacity-100 translate-y-0">
+                                <a href="#" class="inline-flex items-center justify-center bg-white text-neutral-900 font-bold px-6 py-3 md:px-8 md:py-3.5 rounded-xl hover:bg-neutral-100 active:scale-[0.98] transition-all duration-200 text-sm md:text-base" x-text="slide.btnText">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-6 order-1 lg:order-2 w-full h-48 sm:h-64 lg:h-[80%] overflow-hidden relative">
+                            <img :src="slide.img" 
+                                :alt="slide.title"
+                                class="w-full h-full object-cover object-center transform scale-100 transition-transform duration-[6000ms] ease-out"
+                                :class="activeSlide === slide.id ? 'scale-105' : 'scale-100'">
+                            <div class="absolute inset-0 pointer-events-none"></div>
+                        </div>
+
                     </div>
-                `).join('');
-            }
+                </template>
+            </div>
 
-            function filterSelection(category) {
-                // Update active button
-                document.querySelectorAll('#filter-buttons .btn').forEach(btn => {
-                    btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${category}'`));
-                });
+            <template x-if="slides.length > 1">
+                <div>
+                    <button @click="prev()" aria-label="Previous slide" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm active:scale-95 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+                    </button>
+                    <button @click="next()" aria-label="Next slide" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm active:scale-95 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                    </button>
+                </div>
+            </template>
 
-                // Show/hide projects
-                document.querySelectorAll('#projects-grid .project-item').forEach(item => {
-                    item.style.display = item.classList.contains(category) ? '' : 'none';
-                });
-            }
-        </script>
-        <!-- End: Portfolio Section -->
+            <div x-show="slides.length > 1" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2.5 bg-black/10 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                <template x-for="slide in slides" :key="slide.id">
+                    <button @click="setSlide(slide.id)" 
+                            :aria-label="`Go to slide ${slide.id}`"
+                            class="h-2 rounded-full transition-all duration-300"
+                            :class="activeSlide === slide.id ? 'w-6 bg-white' : 'w-2 bg-white/40 hover:bg-white/70'"></button>
+                </template>
+            </div>
+        </div>
+        <!-- End: Main Slider Section -->
+
+        <!-- Services -->
+        <section class="py-16 md:py-20 bg-white dark:bg-neutral-900 transition-colors duration-300" id="service-section">
+            <div class="container mx-auto px-6 sm:px-12">
+                
+                <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+                    <span class="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Что мы делаем</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-neutral-900 dark:text-white tracking-tight">
+                        Наши Услуги
+                    </h2>
+                    <div class="h-1 w-12 bg-blue-600 mx-auto my-4 rounded-full"></div>
+                    <p class="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                        Создание сайтов в Грозном от визиток до интернет-магазинов. А также контекстное и SEO-продвижение в поисковых системах, сервисы повышения продаж и техническая поддержка.
+                    </p>
+                </div>        
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">     
+                    
+                    <div class="group p-8 rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 hover:shadow-xl dark:hover:shadow-neutral-950/50 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/50 p-3 transition-transform duration-300 group-hover:scale-110">
+                                <img alt="Разработка Веб-Сайта" src="/assets/images/services/web-development.png" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-bold font-serif text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                Разработка Веб-Сайта
+                            </h3>
+                            <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                Применяем современные методы программирования, что позволяет нам разрабатывать сайты любой сложности под каждого клиента для решения масштабных задач.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 hover:shadow-xl dark:hover:shadow-neutral-950/50 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/50 p-3 transition-transform duration-300 group-hover:scale-110">
+                                <img alt="Создание Веб-Дизайна" src="/assets/images/services/web-design.png" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-bold font-serif text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                Создание Веб-Дизайна
+                            </h3>
+                            <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                Рисуем интерфейсы, учитывая тренды и логику пользователей. Вносим корректировки в макеты до полного согласования на основе аналитики.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 hover:shadow-xl dark:hover:shadow-neutral-950/50 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/50 p-3 transition-transform duration-300 group-hover:scale-110">
+                                <img alt="SEO продвижение сайта" src="/assets/images/services/computer-vision.png" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-bold font-serif text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                SEO продвижение сайта
+                            </h3>
+                            <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                Привлекаем максимальное число клиентов из поисковых систем Yandex и Google, продвигая ваш ресурс по целевым коммерческим запросам.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 hover:shadow-xl dark:hover:shadow-neutral-950/50 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/50 p-3 transition-transform duration-300 group-hover:scale-110">
+                                <img alt="Техническая поддержка" src="/assets/images/services/machine-learning.png" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-bold font-serif text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                Техническая поддержка
+                            </h3>
+                            <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                Предлагаем полный комплекс услуг по техническому сопровождению, обновлению ядра, защите от атак и бесперебойному обслуживанию сайтов.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 hover:shadow-xl dark:hover:shadow-neutral-950/50 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/50 p-3 transition-transform duration-300 group-hover:scale-110">
+                                <img alt="Создание сайта на CMS" src="/assets/images/services/big-data.png" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-bold font-serif text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                Создание сайта на CMS
+                            </h3>
+                            <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                Мы создаем полноценные динамические проекты на удобных CMS. Вы сможете самостоятельно и легко управлять контентом, ценами и структурой.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 rounded-2xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 hover:shadow-xl dark:hover:shadow-neutral-950/50 transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/50 p-3 transition-transform duration-300 group-hover:scale-110">
+                                <img alt="Разработка приложения" src="/assets/images/services/app-development.png" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-bold font-serif text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                Разработка приложения
+                            </h3>
+                            <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                Проектируем и запускаем мобильные приложения для iOS и Android. Берем на себя весь процесс публикации и модерации в маркетах.
+                            </p>
+                        </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End: Services -->
+        <!-- Portfolio -->
+        <section id="portfolio-section" class="py-16 md:py-20 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300"
+                x-data="{
+                    activeFilter: '',
+                    categories: [],
+                    projects: [],
+                    isLoading: true,
+                    init() {
+                        fetch('/data/portfolio.json')
+                            .then(res => res.json())
+                            .then(data => {
+                                // Исключаем 'all-projects' из табов на главной
+                                this.categories = data.categories.filter(c => c.id !== 'all-projects');
+                                this.projects = data.projects;
+                                
+                                // Делаем активной первую категорию по умолчанию
+                                if (this.categories.length > 0) {
+                                    this.activeFilter = this.categories[0].id;
+                                }
+                                this.isLoading = false;
+                            })
+                            .catch(err => console.error('Ошибка загрузки портфолио:', err));
+                    },
+                    get homepageProjects() {
+                        return this.projects
+                            .filter(p => p.category === this.activeFilter)
+                            .slice(0, 6);
+                    }
+                }">
+            <div class="container mx-auto px-6 sm:px-12">
+                
+                <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Наше портфолио</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-neutral-900 dark:text-white tracking-tight">
+                            Последние Работы
+                        </h2>
+                        <div class="h-1 w-12 bg-blue-600 rounded-full mt-2"></div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 bg-neutral-200/60 dark:bg-neutral-900/40 p-1.5 rounded-xl border border-neutral-200/10" x-show="!isLoading">
+                        <template x-for="filter in categories" :key="filter.id">
+                            <button @click="activeFilter = filter.id"
+                                    :class="activeFilter === filter.id 
+                                        ? 'bg-blue-600 text-white shadow-md' 
+                                        : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'"
+                                    class="px-5 py-2 text-sm font-medium rounded-lg transition-all duration-200 whitespace-nowrap"
+                                    x-text="filter.title">
+                            </button>
+                        </template>
+                    </div>
+                </div>
+
+                <div x-show="isLoading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="animate-pulse bg-neutral-200 dark:bg-neutral-800 aspect-video rounded-2xl"></div>
+                    <div class="animate-pulse bg-neutral-200 dark:bg-neutral-800 aspect-video rounded-2xl hidden md:block"></div>
+                    <div class="animate-pulse bg-neutral-200 dark:bg-neutral-800 aspect-video rounded-2xl hidden lg:block"></div>
+                </div>
+
+                <div x-show="!isLoading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <template x-for="project in homepageProjects" :key="project.title">
+                        <div x-transition:enter="transition ease-out duration-300"
+                            x-transition:enter-start="opacity-0 scale-95 translate-y-4"
+                            x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+                            class="group relative overflow-hidden rounded-2xl border border-neutral-200/60 dark:border-neutral-800/60 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-xl dark:hover:shadow-neutral-950/40 transition-all duration-300 flex flex-col justify-between">
+                            
+                            <div>
+                                <div class="aspect-video w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800 relative">
+                                    <img :alt="project.title" :src="project.image" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-103">
+                                    
+                                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                        <a :href="project.url" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 px-4 py-2.5 rounded-xl shadow-md transition">
+                                            Посетить сайт
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="p-6">
+                                    <span class="text-xs font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase" 
+                                        x-text="categories.find(c => c.id === project.category)?.title"></span>
+                                    
+                                    <h3 class="text-lg font-serif font-bold text-neutral-900 dark:text-white mt-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                                        <a :href="project.url" target="_blank" rel="noopener" x-text="project.title" class="focus:outline-none"></a>
+                                    </h3>
+                                    
+                                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed" 
+                                    x-text="project.description"></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </template>
+                </div>
+
+                <div class="text-center" x-show="!isLoading">
+                    <a href="/projects" class="inline-flex items-center gap-2 text-base font-bold text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                        Посмотреть все проекты
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- End: Portfolio -->
         <!-- About Section -->
-        <section class="curved-shadow" id="about-section">
-            <!-- Object used for flying shapess affect -->
+        <section id="about-section" class="relative py-16 md:py-20 bg-white dark:bg-neutral-900 overflow-hidden transition-colors duration-300">
+            
             <object
                 type="image/svg+xml"
                 data="/assets/images/animated-bg.svg"
                 aria-hidden="true"
-                width="100%"
-                style="position: absolute; z-index: 0; opacity: .1;">
+                class="absolute inset-0 w-full h-full pointer-events-none z-0 opacity-[0.03] dark:opacity-[0.05]">
             </object>
-            <div class="container">
-                <div class="section-header">
-                    <h1 class="text-center font-serif">О Компании</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 style="margin-top:0">GrozNet - Создание Сайтов в Грозном</h2>
-                        <p>Создание Сайтов в Грозном от визиток до Интернет-магазинов. А также контекстное и SEO-продвижение в поисковых системах, сервисы повышения продаж и техническую поддержку по системе управления.</p>
-                        <p>Создание и продвижение сайтов в Грозном является одним из основных направлений студии GrozNet. У нас накоплен огромный опыт в разработке различных сайтов: сайтов-визиток, интернет-магазинов, порталов и информационных систем.</p>
-                        <p>Любой проект мы разбиваем на несколько этапов, что позволяет минимизировать риски, наиболее точно оценить стоимость работ и последовательно решать задачи, получая в конце каждого этапа конкретный результат.</p>
-                        <p>Свое виртуальное представительство в сети Интернет это то, что нужно каждому бизнесу. Продвижение сайта а также его продвижение позволит вам значительно повысить продажи. Если вы желаете заказать сайт, сделанный качественно и на совесть, то мы будем рады вам помочь реализовать любые, даже самые необычные проекты. Предоставляем широкий комплекс услуг, в том числе предлагаем продвижение сайта в поисковых системах.</p>
-                        <p>Студия GrozNet, специализирующаяся на создании вебсайтов, а также их обслуживании и продвижении, уже готова приступить к сотрудничеству с вами.<br>Веб-студия GrozNet вошла в список ratingruneta студии по разработке сайтов и Мы останемся рядом и после завершения работы, ведь вся наша деятельность строится на исключительной ориентированности на клиента – и даже сдав интернет-проект, мы обязательно проконсультируем вас по всем возникшим вопросам</p>
-                        <p>Студия GrozNet предлагает вам не только создание и продвижение сайтов в Грозном, но и любую поддержку, эффективную рекламную кампанию в различных поисковых системах. Мы предоставляем любые услуги, связанные с обслуживанием интернет-проектов.</p>
-                        <p>Хороший сайт – это залог процветающего предприятия и успешного бизнеса. Он презентует компанию клиентам, выделяет ее среди конкурентов, является инструментом продаж и повышения прибыли. Создавать сайт под ключ – это делать сложную и кропотливую работу командой, в которой заняты программисты, дизайнеры, верстальщики, контент-менеджеры и многие другие специалисты. Правильный выбор компании-разработчика сайта – это первый шаг в достижении цели – качественный ресурс, полностью удовлетворяющий заказчика.
+
+            <div class="container relative z-10  mx-auto px-6 sm:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">О компании</span>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-neutral-900 dark:text-white tracking-tight leading-none">
+                            GrozNet
+                        </h2>
+                        <p class="text-xl text-neutral-500 dark:text-neutral-400 font-medium">
+                            Создание и комплексное продвижение сайтов в Грозном.
                         </p>
+                        
+                        <div class="grid grid-cols-2 gap-6 pt-6 border-t border-neutral-100 dark:border-neutral-800">
+                            <div>
+                                <div class="text-4xl font-extrabold text-neutral-900 dark:text-white font-serif">10+</div>
+                                <div class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">Лет на рынке веб-разработки</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-extrabold text-neutral-900 dark:text-white font-serif">Рейтинг</div>
+                                <div class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">Входим в списки «Рейтинга Рунета»</div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="lg:col-span-7 space-y-6 lg:pl-6 text-neutral-600 dark:text-neutral-400 leading-relaxed text-base md:text-lg">
+                        <p>
+                            Мы специализируемся на проектировании и реализации цифровых решений любой сложности — от лаконичных посадочных страниц до масштабных интернет-магазинов, корпоративных порталов и информационных систем.
+                        </p>
+                        <p>
+                            Любой проект мы разделяем на прозрачные этапы: от аналитики и проектирования интерфейсов до программирования и запуска рекламы. Это позволяет минимизировать риски, точно оценивать бюджет и гарантировать сдачу проекта строго в срок.
+                        </p>
+                        <p>
+                            Главное отличие веб-студии <strong class="text-neutral-900 dark:text-white font-medium">GrozNet</strong> — мы не исчезаем после релиза. Наша деятельность строится на долгосрочном партнерстве: мы берем проекты на комплексную техническую поддержку, развиваем функционал и обеспечиваем стабильный поток клиентов из поисковых систем Yandex и Google.
+                        </p>
+
+                        <div class="pt-4">
+                            <a href="/about" class="inline-flex items-center gap-2 text-base font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors group">
+                                Подробнее о нашей студии
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
         <!-- End: About Section -->
+
         <!-- Testimony Section -->
-        <section id="testimony-section" style="background: #009688; color: #fff">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="text-center font-serif">Отзывы клиентов</h2>
+        <section id="testimony-section" class="py-16 md:py-20 bg-neutral-50 dark:bg-neutral-950 overflow-hidden transition-colors duration-300"
+                x-data="{
+                    testimonials: [],
+                    currentIndex: 0,
+                    isLoading: true,
+                    autoplayTimer: null,
+                    init() {
+                        fetch('/data/testimonials.json')
+                            .then(res => res.json())
+                            .then(data => {
+                                this.testimonials = data;
+                                this.isLoading = false;
+                                this.startAutoplay();
+                            })
+                            .catch(err => console.error('Ошибка загрузки отзывов:', err));
+                    },
+                    next() {
+                        this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
+                        this.resetAutoplay();
+                    },
+                    prev() {
+                        this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
+                        this.resetAutoplay();
+                    },
+                    startAutoplay() {
+                        this.autoplayTimer = setInterval(() => {
+                            if (this.testimonials.length) {
+                                this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
+                            }
+                        }, 8000);
+                    },
+                    resetAutoplay() {
+                        clearInterval(this.autoplayTimer);
+                        this.startAutoplay();
+                    }
+                }"
+                @mouseenter="clearInterval(autoplayTimer)"
+                @mouseleave="startAutoplay()">
+            
+            <div class="max-w-5xl mx-auto px-6 sm:px-12 relative">
+                
+                <!-- Section Header -->
+                <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+                    <span class="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Обратная связь</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-neutral-900 dark:text-white tracking-tight">
+                        Отзывы клиентов
+                    </h2>
+                    <div class="h-1 w-12 bg-blue-600 mx-auto my-4 rounded-full"></div>
                 </div>
-                <div class="testiSlide" id="testimonial-container">
-                    <!-- Dynamic items injected here -->
-                </div>
-            </div>
-        </section>
 
-        <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const data = [
-            {
-                "text": "Выражаю искреннюю благодарность фирме создание сайтов \"Groznet\" за создание сайта! Профессиональный подход работников веб-студии, внимательное отношение к заказу по созданию сайта. Своевременное, ответственное и полное выполнение работ. Учет мнение заказчика по созданию сайта. Продолжаем сотрудничать с компанией!",
-                "image": "/assets/images/testimony/Иса-Сардалов-Алхазурович.jpg",
-                "name": "Иса Сардалов",
-                "identity": "Председатель ПДР ЧР"
-            },
-            {
-                "text": "Благодарим сотрудникам центра интернет-решений создание сайтов GrozNet в особенности Кериму Тимирбулатову за профессиональную, качественную и индивидуальную разработку сайта. Команда профессионально подошла к заказу, как по созданию так и по вопросу дальнейшей поддержки. Остались исключительно положительные впечатления))",
-                "image": "/assets/images/testimony/МинФин-ЧР-white.png",
-                "name": "Финансовая грамотность",
-                "identity": "Министерство Финансов ЧР"
-            },
-            {
-                "text": "От всей души благодарю Керима и команду разработчиков из фирмы Грознет! Обратился в компанию, получил грамотную консультацию, выслал т.з., и работа сразу закипела. Керим профессионально курировал проект, терпеливо отвечая на вопросы и оперативно внося все правки. В итоге получился сайт, которым мы полностью довольны и пользуемся.",
-                "image": "/assets/images/testimony/VikkiEmlak.jpg",
-                "name": "VikkiEmlak",
-                "identity": "Недвижимость в Турции"
-            },
-            {
-                "text": "Выражаю благодарность сотрудникам Центра интернет-решений \"GrozNet\" за выполненную работу по верстке индивидуального дизайн-макета сайта нашего магазина и программированию. Все работы выполнялись в срок и в соответствии с заданием. Возникающие в процессе вопросы решались по ходу без каких либо проблем для заказчика.",
-                "image": "/assets/images/testimony/ООО-Ипотечный-Центр.jpg",
-                "name": "Аймани Бухгалтер",
-                "identity": "ООО «ИПОТЕЧНЫЙ ЦЕНТР»"
-            },
-            {
-                "text": "Благодарим компанию по созданию и поддержка сайта \"GrozNet\" за создание интернет-магазина! Все работы были выполнены в срок, пожелания учтены. Был постоянный контакт с разработчиками сайта. Все вопросы решались в быстрые сроки. Исходя из своего опыта сотрудничества, рекомендуем Грознет как надежного разработчика сайтов!",
-                "image": "/assets/images/testimony/HizbroFit.png",
-                "name": "Хизир Абуяздиевич",
-                "identity": "Директор магазина «HIZBROFIT»"
-            },
-            {
-                "text": "Огромное спасибо Центру интернет-решений и технологий Groznet за качественную работу и отличный сервис. Сайт, который Вы создали для нашей компании - радует и отвечает всем нашим требованиям. Спасибо за качественное сервисное обслуживание. Все наши будущие проекты также планируем проводить с Вами. Процветания ВАМ!",
-                "image": "/assets/images/testimony/Грозненский-рабочий.jpg",
-                "name": "Зарихан Зубайраева",
-                "identity": "Редактор «Грозненский рабочий»"
-            },
-            {
-                "text": "Хочу благодарить компанию «ГрозНет» за квалифицированную, профессиональную работу в осуществлении перехода сайта на новую версию CMS. Вежливость, внимательность, оперативность, профессионализм - далеко не полный перечень качеств сотрудников компании Groznet. Учли все наши пожелания, разрешили все проблемы. Спасибо.",
-                "image": "/assets/images/testimony/Умар-Байханов-Баутдинович.png",
-                "name": "Умар Байханов Б.",
-                "identity": "Председатель ИЗБИРКОМ ЧР"
-            }
-            ];
-
-            const container = document.getElementById('testimonial-container');
-            if (!container) return;
-
-            container.innerHTML = data.map(item => `
-                <figure class="testimonial">
-                    <p>${item.text}</p>
-                    <div class="btn"></div>
-                    <img src="${item.image}" alt="">
-                    <div class="people">
-                        <h3>${item.name}</h3>
-                        <p class="indentity">${item.identity}</p>
+                <!-- Skeleton Loader -->
+                <div x-show="isLoading" class="animate-pulse flex flex-col items-center space-y-6 max-w-3xl mx-auto py-8">
+                    <div class="h-4 bg-neutral-200 dark:bg-neutral-800 rounded w-full"></div>
+                    <div class="h-4 bg-neutral-200 dark:bg-neutral-800 rounded w-5/6"></div>
+                    <div class="h-4 bg-neutral-200 dark:bg-neutral-800 rounded w-2/3"></div>
+                    <div class="flex items-center space-x-4 pt-4">
+                        <div class="rounded-full bg-neutral-200 dark:bg-neutral-800 h-14 w-14"></div>
+                        <div class="space-y-2">
+                            <div class="h-4 bg-neutral-200 dark:bg-neutral-800 rounded w-24"></div>
+                            <div class="h-3 bg-neutral-200 dark:bg-neutral-800 rounded w-32"></div>
+                        </div>
                     </div>
-                </figure>
-            `).join('');
-
-            // Initialize your slider here if needed:
-            // $('.testiSlide').not('.slick-initialized').slick();
-        });
-        </script>
-        <!-- End: Testimony section -->
-
-        <!-- About Section -->
-        <section id="about-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="font-serif">О Компании</h2>
-                    <p>Студия GrozNet предлагает вам не только создание и продвижение сайтов в Грозном, но и любую поддержку, эффективную рекламную кампанию в различных поисковых системах. Мы предоставляем любые услуги, связанные с обслуживанием интернет-проектов.</p>
                 </div>
+
+                <!-- Slider Wrapper -->
+                <div x-show="!isLoading" class="relative max-w-3xl mx-auto min-h-[320px] md:min-h-[260px] flex items-center">
+                    
+                    <template x-for="(item, index) in testimonials" :key="item.id">
+                        <div x-show="currentIndex === index"
+                            x-transition:enter="transition ease-out duration-500 transform"
+                            x-transition:enter-start="opacity-0 scale-98 translate-x-8"
+                            x-transition:enter-end="opacity-100 scale-100 translate-x-0"
+                            x-transition:leave="transition ease-in duration-300 transform absolute inset-0"
+                            x-transition:leave-start="opacity-100 scale-100 translate-x-0"
+                            x-transition:leave-end="opacity-0 scale-98 -translate-x-8"
+                            class="text-center space-y-8 w-full flex flex-col items-center">
+                            
+                            <!-- Quote Mark Icon Overlay Decor -->
+                            <div class="text-neutral-200 dark:text-neutral-800/40 select-none h-10 leading-none font-serif text-7xl -mb-4">“</div>
+
+                            <!-- Review Text -->
+                            <p class="text-base md:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed italic px-4 font-normal" x-text="item.text"></p>
+                            
+                            <!-- Author Metadata Block -->
+                            <div class="flex flex-col sm:flex-row items-center gap-4 pt-4 text-left">
+                                <div class="w-14 h-14 rounded-full p-0.5 bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 overflow-hidden flex-shrink-0 shadow-sm">
+                                    <img :src="item.image" :alt="item.name" class="w-full h-full object-cover rounded-full filter grayscale dark:grayscale-0">
+                                </div>
+                                <div class="text-center sm:text-left">
+                                    <h3 class="text-base font-bold text-neutral-900 dark:text-white" x-text="item.name"></h3>
+                                    <p class="text-xs md:text-sm font-medium text-blue-600 dark:text-blue-400 mt-0.5" x-text="item.identity"></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Structural Interactive Arrows -->
+                <div x-show="!isLoading" class="hidden sm:block">
+                    <button @click="prev()" class="absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg transition-all duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+                    </button>
+                    <button @click="next()" class="absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg transition-all duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                    </button>
+                </div>
+
+                <!-- Pagination Indicators -->
+                <div x-show="!isLoading" class="flex justify-center space-x-2 mt-8">
+                    <template x-for="(item, index) in testimonials" :key="item.id">
+                        <button @click="currentIndex = index; resetAutoplay()" 
+                                class="h-1.5 rounded-full transition-all duration-300"
+                                :class="currentIndex === index ? 'w-6 bg-blue-600' : 'w-1.5 bg-neutral-300 dark:bg-neutral-700 hover:bg-neutral-400 dark:hover:bg-neutral-600'"></button>
+                    </template>
+                </div>
+
             </div>
         </section>
-        <!-- End: About Section -->
+        <!-- End: Testimony Section -->
 
         <!-- Benefits Section -->
-        <section id="advantage-section">
-            <div class="container grid grid-cols-2 gap-4">
-                <div class="grid-item" id="youtube-video">
-                    <div style="width: 100%">
-                        <div style="position: relative; padding-bottom: 56.15%; height: 0; overflow: hidden;">
-                            <iframe style="position: absolute; top: 0; left:0; width: 100%; height: 100%; border: 0;"
-                            loading="lazy";
-                            srcdoc="<style>
-                                * {
-                                    padding: 0;
-                                    margin: 0;
-                                    overflow: hidden;
-                                }
-                                
-                                img, svg {
-                                    position: absolute;
-                                    width: 100%;
-                                    top: 0;
-                                    bottom: 0;
-                                    margin: auto;
-                                }
-                                
-                                svg {
-                                    filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
-                                    transition: all 250ms ease-in-out;
-                                }
-                                
-                                body:hover svg {
-                                    filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
-                                    transform: scale(1.2);
-                                }
-                            </style>
-                            <a href='https://www.youtube.com/embed/QvY0wB765Ts?autoplay=1'>
-                                <img src='https://img.youtube.com/vi/QvY0wB765Ts/hqdefault.jpg' alt='Создание сайтов в Грозном'>
-                                <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
-                            </a>
-                            "
-                            src="https://www.youtube.com/embed/QvY0wB765Ts" 
-                            title="Создание сайтов в Грозном"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
+        <section id="advantage-section" class="py-14 md:py-18 bg-white dark:bg-neutral-900 transition-colors duration-300">
+            <div class="container mx-auto px-6 sm:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    
+                    <div class="w-full">
+                        <div class="relative rounded-xl overflow-hidden bg-neutral-900 aspect-video shadow-sm">
+                            <iframe 
+                                class="absolute inset-0 w-full h-full border-0"
+                                loading="lazy"
+                                srcdoc="<style>
+                                    * { padding: 0; margin: 0; overflow: hidden; height: 100%; }
+                                    body { background: #171717; display: flex; align-items: center; justify-content: center; }
+                                    img { position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0; transition: opacity 0.3s; }
+                                    .play-btn { position: relative; z-index: 10; width: 60px; height: 60px; background: #2563eb; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; }
+                                    body:hover img { filter: brightness(0.9); }
+                                    body:hover .play-btn { transform: scale(1.05); background: #1d4ed8; }
+                                </style>
+                                <a href='https://www.youtube.com/embed/QvY0wB765Ts?autoplay=1' style='width:100%; height:100%; display:flex; align-items:center; justify-content:center;'>
+                                    <img src='https://img.youtube.com/vi/QvY0wB765Ts/hqdefault.jpg' alt='Создание сайтов в Грозном'>
+                                    <div class='play-btn'>
+                                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><polygon points='8 5 19 12 8 19 8 5'></polygon></svg>
+                                    </div>
+                                </a>"
+                                src="https://www.youtube.com/embed/QvY0wB765Ts" 
+                                title="Создание сайтов в Грозном"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
                             </iframe>
                         </div>
-                    </div> 
-                </div>
-                <div class="grid-item">
-                    <h3>НАШИ ПРЕИМУЩЕСТВА</h3>
-                    <ul class="faq-list">
-                        <li class="p-2">
-                            <p class="faq-heading">Индивидуальные решения с нуля</p>
-                            <p class="read faq-text">Веб студия GrozNet предлагает услуги профессионального создания сайта с нуля в Грозном и регионах России. Мы успешно работаем уже более 10 лет, имеем актуальное портфолио выполненных работ. Предоставляем комплексные услугипо конкурентным ценам.</p>
-                        </li>
-                        <li class="p-2">
-                            <p class="faq-heading">Готовое решение сайта на СMS</p>
-                            <p class="read faq-text">Мы разрабатываем сайты, используя за основу CMS Open Source. Разработка сайтов на CMS позволяет значительно снизить затраты на изготовление сайта, повышая возможность его расширения и модификации. Открытость исходного кода и использование классических языков программирования открывает широкие возможности в модернизации сайта по мере его развития или развития компании!</p>
-                        </li>
-                        <li class="p-2">
-                            <p class="faq-heading">SEO оптимизация и продвижение сайта</p>
-                            <p class="read faq-text">Конкуренция среди сайтов не заставляет себя ждать. В связи с этим, очень важно управлять сайтом эффективно и с учетом параметров его индексации поисковыми системами. Оптимизация сайта под поисковые системы - сложный процесс, но он уже стал стандартом для владельцев сайтов.</p>
-                        </li>
-                        <li class="p-2">
-                            <p class="faq-heading">Техническое сопровождение и обслуживание сайтов</p>
-                            <p class="read faq-text">Мы накопили уникальный опыт по сопровождению и технической поддержке сайтов компаний: в настоящее время мы развиваем на постоянной основе более 200 проектов наших клиентов, а также оказываем услуги разовой (нерегулярной) онлайн-поддержки. Мы готовы включиться в проект на любой стадии и обеспечить его дальнейшее развитие.</p>
-                        </li>
-                        <li class="p-2">
-                            <p class="faq-heading">Удобство управления сайтами</p>
-                            <p class="read faq-text">Так как за основу берутся самые популярные, зарекомендовавшие себя только с лучшей стороны CMS, пользоваться нашими сайтами легко и удобно.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- End: Benefits section -->
-        <!-- Contact section -->
-        <section id="contact-section" style="background: #00bcd4 url('/assets/images/contact-pattern-bg.png'); padding-bottom: 25px; z-index:1;">
-            <div class="container">
-                <div class="section-header text-center white-text">
-                    <h1 class="font-serif">Связаться</h1>
-                    <p>Если у Вас остались ещё какие-либо вопросы к нам — мы с удовольствием на них ответим! Для этого позвоните нам по телефону: 8(929)-888-33-27, или напишите письмо на info@groznet.com, или отправьте нам пиьсмо через форму ниже.</p>
-                </div>
-            </div>
-        </section>
-        <section id="contact-section">
-            <div class="container grid grid-cols-2 gap-4">
-                <div>
-                    <div id="map" style="width:100%;height:450px"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2440.750374436978!2d45.68218572287002!3d43.3235173723845!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1667738654524!5m2!1sen!2sru" width="600" height="450" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
-                <div>
-                    <form class="space-between" style="height: 450px">
-                        <label class="w-full" for="fname">Ваше имя</label>
-                        <input disabled class="w-full mb-4" type="text" id="fname" name="fname" placeholder="Введите имя..">
-                        
-                        <label class="w-full" for="lname">Вашу фамилию</label>
-                        <input disabled class="w-full mb-4" type="text" id="lname" name="lname" placeholder="Введите фамилию..">
-                        
-                        <label class="w-full" for="department">Отдел</label>
-                        <select disabled class="w-full mb-4" id="department" name="department">
-                            <option value="australia">Разработка сайта</option>
-                            <option value="usa">Обслуживание</option>
-                            <option value="usa">Консультация</option>
-                            <option value="usa">Другой</option>
-                        </select>
-                        <label class="w-full" for="subject">Сообщение</label>
-                        <textarea disabled class="w-full mb-4" id="subject" name="subject" placeholder="Введите ваше сообщение.." rows=8></textarea>
 
-                        <!-- reCAPTCHA v2 checkbox -->
-                        <div class="g-recaptcha" data-sitekey="6LemYY0qAAAAAHnCaga5OsuPUZ6qcC65pJNJBmNw"></div>
+                    <div class="space-y-6" x-data="{ active: 1 }">
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Почему выбирают нас</span>
+                            <h2 class="text-3xl md:text-4xl font-serif font-bold text-neutral-900 dark:text-white tracking-tight">
+                                Наши Преимущества
+                            </h2>
+                        </div>
 
-                        <input disabled class="w-full" style="background: #00bcd4; color: #fff; border: none" type="submit" value="Отправить">
-                    </form>
+                        <div class="divide-y divide-neutral-100 dark:divide-neutral-800 border-t border-b border-neutral-100 dark:border-neutral-800">
+                            
+                            <div class="py-4">
+                                <button @click="active = active === 1 ? null : 1" class="w-full flex items-center justify-between py-1 text-left font-serif text-lg font-bold text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                                    <span>Индивидуальные решения с нуля</span>
+                                    <span class="ml-4 flex-shrink-0 transition-transform duration-200 text-neutral-400 group-hover:text-neutral-600" :class="active === 1 ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                                    </span>
+                                </button>
+                                <div x-show="active === 1" x-collapse x-cloak>
+                                    <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed pt-2">
+                                        Веб-студия GrozNet предлагает услуги профессионального создания сайтов с нуля в Грозном и регионах России. Мы успешно работаем уже более 10 лет, имеем актуальное портфолио выполненных работ и предоставляем комплексные услуги по конкурентным ценам.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="py-4">
+                                <button @click="active = active === 2 ? null : 2" class="w-full flex items-center justify-between py-1 text-left font-serif text-lg font-bold text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                                    <span>Готовые решения на Open Source CMS</span>
+                                    <span class="ml-4 flex-shrink-0 transition-transform duration-200 text-neutral-400 group-hover:text-neutral-600" :class="active === 2 ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                                    </span>
+                                </button>
+                                <div x-show="active === 2" x-collapse x-cloak>
+                                    <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed pt-2">
+                                        Разработка сайтов на базе популярных CMS позволяет значительно снизить стартовые затраты, повышая при этом скорость масштабирования. Открытость исходного кода и использование классических языков программирования открывает безграничные возможности модернизации по мере роста вашего бизнеса.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="py-4">
+                                <button @click="active = active === 3 ? null : 3" class="w-full flex items-center justify-between py-1 text-left font-serif text-lg font-bold text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                                    <span>SEO-оптимизация и продвижение</span>
+                                    <span class="ml-4 flex-shrink-0 transition-transform duration-200 text-neutral-400 group-hover:text-neutral-600" :class="active === 3 ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                                    </span>
+                                </button>
+                                <div x-show="active === 3" x-collapse x-cloak>
+                                    <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed pt-2">
+                                        Высокая конкуренция требует эффективного продвижения. Мы закладываем правильную SEO-структуру еще на этапе проектирования кода, подготавливая сайт к быстрой и корректной индексации поисковыми системами Яндекс и Google.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="py-4">
+                                <button @click="active = active === 4 ? null : 4" class="w-full flex items-center justify-between py-1 text-left font-serif text-lg font-bold text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                                    <span>Техническое сопровождение 24/7</span>
+                                    <span class="ml-4 flex-shrink-0 transition-transform duration-200 text-neutral-400 group-hover:text-neutral-600" :class="active === 4 ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                                    </span>
+                                </button>
+                                <div x-show="active === 4" x-collapse x-cloak>
+                                    <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed pt-2">
+                                        Мы накопили уникальный опыт по поддержке проектов любой сложности. В настоящее время мы развиваем на постоянной основе более 200 ресурсов наших клиентов. Мы готовы оперативно включиться в работу на любой стадии и обеспечить стабильную безопасность сайта.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="py-4">
+                                <button @click="active = active === 5 ? null : 5" class="w-full flex items-center justify-between py-1 text-left font-serif text-lg font-bold text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                                    <span>Удобство и легкость управления</span>
+                                    <span class="ml-4 flex-shrink-0 transition-transform duration-200 text-neutral-400 group-hover:text-neutral-600" :class="active === 5 ? 'rotate-180 text-blue-600' : 'text-neutral-400 group-hover:text-neutral-600'">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                                    </span>
+                                </button>
+                                <div x-show="active === 5" x-collapse x-cloak>
+                                    <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed pt-2">
+                                        Никакого сложного кода для администрирования. Так как за основу берутся самые понятные и эргономичные панели управления, вы и ваши сотрудники сможете самостоятельно изменять тексты, добавлять товары и обрабатывать заявки без привлечения программистов.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <!-- End: Contact section -->
 
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Only show the first 6 items initially
-            const items = document.querySelectorAll('.project-item');
-            items.forEach((item, index) => {
-            item.style.display = index < 6 ? 'block' : 'none';
-            });
-        });
+        <section id="contact-section" class="py-16 md:py-24 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                
+                <div class="max-w-2xl mx-auto text-center mb-16 space-y-3">
+                    <span class="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Свяжитесь с нами</span>
+                    <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+                        Обсудите ваш проект с экспертами GrozNet. Заполните форму обратной связи или найдите наш офис на карте.
+                    </p>
+                </div>
 
-        function filterSelection(category) {
-            const items = document.querySelectorAll('.project-item');
-            
-            if (category === 'all') {
-            // Show only the first 6 items again when 'all' is selected
-            items.forEach((item, index) => {
-                item.style.display = index < 6 ? 'block' : 'none';
-            });
-            } else {
-            // Hide all items first
-            items.forEach(item => item.style.display = 'none');
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                    
+                    <div class="w-full min-h-[400px] lg:min-h-full rounded-2xl overflow-hidden border border-neutral-200/60 dark:border-neutral-800/60 shadow-sm bg-neutral-100 dark:bg-neutral-900 relative">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46323.82110255866!2d45.65997645!3d43.32014045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4051d50b4ec74477%3A0x6b77242ba4313f8c!2z0JPRgNC-0LfQvdGL0LksINCn0LXRh9C10L3RgdC60LDRjyDQoNC10YHQvy4!5e0!3m2!1sru!2sru!4v1710000000000!5m2!1sru!2sru" 
+                                class="absolute inset-0 w-full h-full border-0 grayscale dark:invert-[0.9] dark:hue-rotate-180 opacity-80 dark:opacity-75 transition-all duration-300" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
 
-            // Show items that match the selected category
-            let count = 0;
-            items.forEach(item => {
-                if (item.classList.contains(category) && count < 6) {
-                item.style.display = 'block';
-                count++;
-                }
-            });
-            }
-        }
-        </script>
+                    <div class="bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800/60 p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+                        <form class="space-y-5" x-data="{ name: '', phone: '', service: 'web-dev', message: '' }" @submit.prevent>
+                            
+                            <div class="p-4 text-sm rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200/60 dark:border-amber-800/40 text-amber-800 dark:text-amber-400 leading-relaxed">
+                                <strong>Обратите внимание:</strong> форма обратной связи представлена исключительно в информационных целях. Введённые данные не отправляются, не сохраняются и не обрабатываются. В настоящее время сайт не осуществляет сбор и обработку персональных данных через данную форму. Для связи с нами используйте телефон или адрес электронной почты, указанные выше.
+                            </div>
+                                                    
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div class="space-y-1.5 opacity-60">
+                                    <label class="text-xs font-semibold text-neutral-600 dark:text-neutral-400 uppercase tracking-wider" for="fname">Ваше имя</label>
+                                    <input class="w-full px-4 py-3 text-sm bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl focus:outline-none text-neutral-900 dark:text-white transition cursor-not-allowed" 
+                                        type="text" id="fname" name="fname" x-model="name" placeholder="Адам" disabled>
+                                </div>
+                                
+                                <div class="space-y-1.5 opacity-60">
+                                    <label class="text-xs font-semibold text-neutral-600 dark:text-neutral-400 uppercase tracking-wider" for="phone">Телефон</label>
+                                    <input class="w-full px-4 py-3 text-sm bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl focus:outline-none text-neutral-900 dark:text-white transition cursor-not-allowed" 
+                                        type="text" id="phone" name="phone" x-model="phone" placeholder="+7 (999) 000-00-00" disabled>
+                                </div>
+                            </div>
 
-        <script>
-            // FAQ accordition code
-            $(".faq-heading").click(function() {
-                // no delay
-                $(this).parent("li").toggleClass("the-active").find(".faq-text").slideToggle(100)
-            })
-            // End: FAQ accordition code
-        </script>
+                            <div class="space-y-1.5 opacity-60">
+                                <label class="text-xs font-semibold text-neutral-600 dark:text-neutral-400 uppercase tracking-wider" for="department">Интересующая услуга</label>
+                                <div class="relative">
+                                    <select class="w-full px-4 py-3 text-sm bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl focus:outline-none text-neutral-900 dark:text-white transition appearance-none cursor-not-allowed" 
+                                            id="department" name="department" x-model="service" disabled>
+                                        <option value="web-dev">Разработка сайта / приложения</option>
+                                        <option value="support">Техническая поддержка и хостинг</option>
+                                        <option value="marketing">Маркетинг и SEO-продвижение</option>
+                                        <option value="automation">Автоматизация процессов и ИИ</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-neutral-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- Slick is used in carousels like client testimony -->
-        <script>
-            // Testimony carousel code
-            $(document).ready(function() {
-                $(".testiSlide").slick({
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: true
-                        }
-                    }]
-                });
-            });
-            // End: Testimony carousel code
-        </script>
-        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-        <footer id="footer"></footer>
+                            <div class="space-y-1.5 opacity-60">
+                                <label class="text-xs font-semibold text-neutral-600 dark:text-neutral-400 uppercase tracking-wider" for="subject">Сообщение</label>
+                                <textarea class="w-full px-4 py-3 text-sm bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl focus:outline-none text-neutral-900 dark:text-white transition resize-none cursor-not-allowed" 
+                                        id="subject" name="subject" x-model="message" placeholder="Опишите ваш проект или задачу..." rows="4" disabled></textarea>
+                            </div>
+
+                            <button type="button" class="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-neutral-400 dark:bg-neutral-800 rounded-xl cursor-not-allowed opacity-50" disabled>
+                                Отправить запрос
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
+                            </button>
+                            
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>        
+
+        
+        <footer id="footer" class="bg-neutral-50 dark:bg-neutral-950 text-neutral-500 dark:text-neutral-400 text-[13px] pt-16 pb-8 border-t border-neutral-200/50 dark:border-neutral-900 transition-colors duration-300"></footer>
         <script src="https://kit.fontawesome.com/1b1dcc9abc.js" crossorigin="anonymous"></script>
         <script src="/assets/js/main.js"></script>
         <!-- <script src="/assets/js/tailwind.js"></script> -->
+         
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </body>
 </html>
