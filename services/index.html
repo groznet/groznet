@@ -57,6 +57,7 @@
         <header id="header"></header>
         <!-- End Header -->
 
+        <!-- Services Hero Section -->
         <section id="services-hero-section" class="py-6 md:py-8 bg-neutral-50 dark:bg-neutral-950 border-b border-neutral-200/50 dark:border-neutral-900 transition-colors duration-300">
             <div class="container mx-auto">
                 <div class="flex flex-col space-y-4">
@@ -64,13 +65,13 @@
                     <nav class="flex items-center space-x-2 text-xs md:text-sm font-medium text-neutral-500 dark:text-neutral-400">
                         <a href="/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center gap-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
                             </svg>
                             Главная
                         </a>
                         
                         <span class="text-neutral-300 dark:text-neutral-700 select-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg>
                         </span>
                         
                         <span class="text-neutral-700 dark:text-neutral-200 font-semibold">Наши Услуги</span>
@@ -87,95 +88,208 @@
             </div>
         </section>
 
-        <section class="py-16 dark:bg-neutral-950 transition-colors duration-300" id="service-section">
-            <div class="container mx-auto">
+        <!-- Main Services Section -->
+        <section class="py-16 md:py-24 bg-white dark:bg-neutral-950 transition-colors duration-300" id="main-services-section">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <div class="max-w-3xl mx-auto text-center mb-16 space-y-3">
-                    <span class="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Комплексные ИТ-решения</span>
-                    <p class="text-neutral-600 dark:text-neutral-400 text-sm md:text-base leading-relaxed">
+                <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+                    <span class="inline-block px-3.5 py-1 text-xs font-semibold tracking-wider uppercase text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border border-blue-200/60 dark:border-blue-800/50 rounded-full">
+                        Комплексные ИТ-решения
+                    </span>
+                    <p class="text-neutral-600 dark:text-neutral-400 text-base md:text-lg leading-relaxed">
                         Разработка цифровых продуктов любой сложности: от быстрых посадочных страниц до высоконагруженных e-commerce платформ и мобильных приложений. Обеспечиваем бесперебойную техническую поддержку и сквозное продвижение вашего бизнеса в сети.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">     
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
                     
-                    <div class="group border border-neutral-200/60 dark:border-neutral-800/60 bg-white dark:bg-neutral-900 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl dark:hover:shadow-neutral-950/40 transition-all duration-300 flex flex-col items-center">
-                        <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 transition-colors group-hover:bg-blue-600">
-                            <img alt="Разработка Веб-Сайта" src="/assets/images/services/web-development.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                    <!-- Service Card 1 -->
+                    <a href="/services/web-development" class="group relative border border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-900 rounded-2xl p-8 text-center shadow-xs hover:shadow-2xl hover:-translate-y-1 dark:hover:shadow-black/50 transition-all duration-300 flex flex-col items-center justify-between">
+                        <div class="flex flex-col items-center w-full">
+                            <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 group-hover:bg-blue-600 transition-colors duration-300 shadow-inner">
+                                <img alt="Разработка Веб-Сайта" src="/assets/images/services/web-development.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                            </div>
+                            <h2 class="text-xl font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                                Разработка Веб-Сайта
+                            </h2>
+                            <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-3 leading-relaxed">
+                                Применяем современные методы программирования, что позволяет нам разрабатывать быстрые и масштабируемые сайты под индивидуальные бизнес-задачи клиента.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                            Разработка Веб-Сайта
-                        </h3>
-                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
-                            Применяем современные методы программирования, что позволяет нам разрабатывать быстрые и масштабируемые сайты под индивидуальные бизнес-задачи клиента.
-                        </p>
-                    </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-200/50 dark:border-neutral-800/50 w-full flex items-center justify-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:gap-2.5 transition-all">
+                            <span>Подробнее</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </div>
+                    </a>
 
-                    <div class="group border border-neutral-200/60 dark:border-neutral-800/60 bg-white dark:bg-neutral-900 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl dark:hover:shadow-neutral-950/40 transition-all duration-300 flex flex-col items-center">
-                        <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 transition-colors group-hover:bg-blue-600">
-                            <img alt="Создание Веб-Дизайна" src="/assets/images/services/web-design.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                    <!-- Service Card 2 -->
+                    <a href="/services/web-design" class="group relative border border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-900 rounded-2xl p-8 text-center shadow-xs hover:shadow-2xl hover:-translate-y-1 dark:hover:shadow-black/50 transition-all duration-300 flex flex-col items-center justify-between">
+                        <div class="flex flex-col items-center w-full">
+                            <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 group-hover:bg-blue-600 transition-colors duration-300 shadow-inner">
+                                <img alt="Создание Веб-Дизайна" src="/assets/images/services/web-design.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                            </div>
+                            <h2 class="text-xl font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                                Создание Веб-Дизайна
+                            </h2>
+                            <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-3 leading-relaxed">
+                                Проектируем интерфейсы на основе глубокого UX-анализа. Прорабатываем и корректируем прототипы до полного согласования с заказчиком.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                            Создание Веб-Дизайна
-                        </h3>
-                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
-                            Проектируем интерфейсы на основе глубокого UX-анализа. Прорабатываем и корректируем прототипы до полного согласования с заказчиком.
-                        </p>
-                    </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-200/50 dark:border-neutral-800/50 w-full flex items-center justify-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:gap-2.5 transition-all">
+                            <span>Подробнее</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </div>
+                    </a>
 
-                    <div class="group border border-neutral-200/60 dark:border-neutral-800/60 bg-white dark:bg-neutral-900 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl dark:hover:shadow-neutral-950/40 transition-all duration-300 flex flex-col items-center">
-                        <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 transition-colors group-hover:bg-blue-600">
-                            <img alt="SEO продвижение сайта" src="/assets/images/services/computer-vision.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                    <!-- Service Card 3 -->
+                    <a href="/services/seo-optimization" class="group relative border border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-900 rounded-2xl p-8 text-center shadow-xs hover:shadow-2xl hover:-translate-y-1 dark:hover:shadow-black/50 transition-all duration-300 flex flex-col items-center justify-between">
+                        <div class="flex flex-col items-center w-full">
+                            <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 group-hover:bg-blue-600 transition-colors duration-300 shadow-inner">
+                                <img alt="SEO продвижение сайта" src="/assets/images/services/computer-vision.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                            </div>
+                            <h2 class="text-xl font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                                SEO продвижение сайта
+                            </h2>
+                            <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-3 leading-relaxed">
+                                Выводим ресурсы в топ поисковых систем Яндекс и Google. Привлекаем максимально целевой и конвертящий трафик для роста ваших продаж.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                            SEO продвижение сайта
-                        </h3>
-                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
-                            Выводим ресурсы в топ поисковых систем Яндекс и Google. Привлекаем максимально целевой и конвертящий трафик для роста ваших продаж.
-                        </p>
-                    </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-200/50 dark:border-neutral-800/50 w-full flex items-center justify-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:gap-2.5 transition-all">
+                            <span>Подробнее</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </div>
+                    </a>
 
-                    <div class="group border border-neutral-200/60 dark:border-neutral-800/60 bg-white dark:bg-neutral-900 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl dark:hover:shadow-neutral-950/40 transition-all duration-300 flex flex-col items-center">
-                        <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 transition-colors group-hover:bg-blue-600">
-                            <img alt="Техническая поддержка" src="/assets/images/services/machine-learning.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                    <!-- Service Card 4 -->
+                    <a href="/services/tech-support" class="group relative border border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-900 rounded-2xl p-8 text-center shadow-xs hover:shadow-2xl hover:-translate-y-1 dark:hover:shadow-black/50 transition-all duration-300 flex flex-col items-center justify-between">
+                        <div class="flex flex-col items-center w-full">
+                            <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 group-hover:bg-blue-600 transition-colors duration-300 shadow-inner">
+                                <img alt="Техническая поддержка" src="/assets/images/services/machine-learning.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                            </div>
+                            <h2 class="text-xl font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                                Техническая поддержка
+                            </h2>
+                            <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-3 leading-relaxed">
+                                Обеспечиваем комплексное администрирование, мониторинг доступности 24/7, защиту от атак и оперативное внедрение новых доработок.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                            Техническая поддержка
-                        </h3>
-                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
-                            Обеспечиваем комплексное администрирование, мониторинг доступности 24/7, защиту от атак и оперативное внедрение новых доработок.
-                        </p>
-                    </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-200/50 dark:border-neutral-800/50 w-full flex items-center justify-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:gap-2.5 transition-all">
+                            <span>Подробнее</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </div>
+                    </a>
 
-                    <div class="group border border-neutral-200/60 dark:border-neutral-800/60 bg-white dark:bg-neutral-900 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl dark:hover:shadow-neutral-950/40 transition-all duration-300 flex flex-col items-center">
-                        <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 transition-colors group-hover:bg-blue-600">
-                            <img alt="Создание сайта на CMS" src="/assets/images/services/big-data.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                    <!-- Service Card 5 -->
+                    <a href="/services/cms-development" class="group relative border border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-900 rounded-2xl p-8 text-center shadow-xs hover:shadow-2xl hover:-translate-y-1 dark:hover:shadow-black/50 transition-all duration-300 flex flex-col items-center justify-between">
+                        <div class="flex flex-col items-center w-full">
+                            <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 group-hover:bg-blue-600 transition-colors duration-300 shadow-inner">
+                                <img alt="Создание сайта на CMS" src="/assets/images/services/big-data.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                            </div>
+                            <h2 class="text-xl font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                                Создание сайта на CMS
+                            </h2>
+                            <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-3 leading-relaxed">
+                                Разрабатываем динамические управляемые сайты на базе популярных CMS. Вы сможете легко и самостоятельно менять контент и управлять структурой.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                            Создание сайта на CMS
-                        </h3>
-                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
-                            Разрабатываем динамические управляемые сайты на базе популярных CMS. Вы сможете легко и самостоятельно менять контент и управлять структурой.
-                        </p>
-                    </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-200/50 dark:border-neutral-800/50 w-full flex items-center justify-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:gap-2.5 transition-all">
+                            <span>Подробнее</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </div>
+                    </a>
 
-                    <div class="group border border-neutral-200/60 dark:border-neutral-800/60 bg-white dark:bg-neutral-900 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl dark:hover:shadow-neutral-950/40 transition-all duration-300 flex flex-col items-center">
-                        <div class="w-16 h-16 mb-4 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 transition-colors group-hover:bg-blue-600">
-                            <img alt="Разработка приложения" src="/assets/images/services/app-development.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                    <!-- Service Card 6 -->
+                    <a href="/services/app-development" class="group relative border border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-white dark:hover:bg-neutral-900 rounded-2xl p-8 text-center shadow-xs hover:shadow-2xl hover:-translate-y-1 dark:hover:shadow-black/50 transition-all duration-300 flex flex-col items-center justify-between">
+                        <div class="flex flex-col items-center w-full">
+                            <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl bg-blue-50 dark:bg-neutral-800 group-hover:bg-blue-600 transition-colors duration-300 shadow-inner">
+                                <img alt="Разработка приложения" src="/assets/images/services/app-development.png" class="w-10 h-10 object-contain transition duration-300 group-hover:invert group-hover:brightness-200">
+                            </div>
+                            <h2 class="text-xl font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                                Разработка приложения
+                            </h2>
+                            <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-3 leading-relaxed">
+                                Проектируем и запускаем нативные или кроссплатформенные мобильные приложения для iOS и Android с полным сопровождением публикации в маркетах.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-serif font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                            Разработка приложения
-                        </h3>
-                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
-                            Проектируем и запускаем нативные или кроссплатформенные мобильные приложения для iOS и Android с полным сопровождением публикации в маркетах.
-                        </p>
-                    </div>    
+                        <div class="mt-6 pt-4 border-t border-neutral-200/50 dark:border-neutral-800/50 w-full flex items-center justify-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:gap-2.5 transition-all">
+                            <span>Подробнее</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </div>
+                    </a>
                     
                 </div>
             </div>
-        </section>        
+        </section>
+        <!-- End: Main Services -->
+        <!-- Секция: Дополнительные услуги -->
+        <section class="py-16 bg-neutral-50 dark:bg-neutral-900/50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <!-- Заголовок секции -->
+                <div class="mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-white tracking-tight mb-3">
+                        Дополнительные услуги
+                    </h2>
+                    <p class="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base max-w-2xl">
+                        Решения для защиты, автономности и оптимизации вашего контента.
+                    </p>
+                </div>
 
-        <!-- End: Services section -->
+                <!-- Сетка услуг -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Карточка: Перенос из ВК -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700/60 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/50 border border-blue-100 dark:border-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6">
+                                <!-- Иконка переноса / архивации -->
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path>
+                                </svg>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-3">
+                                Архивация и перенос публикаций ВКонтакте на сайт
+                            </h3>
+
+                            <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed mb-6">
+                                Не рискуйте потерять годы работы из-за блокировки аккаунта, потери доступа или ограничений социальных сетей. Мы перенесем все ваши публикации из ВКонтакте на сайт, сохранив тексты, изображения, видео и структуру материалов. Ваш контент будет принадлежать только вам и останется доступным независимо от работы социальных платформ.
+                            </p>
+                        </div>
+
+                        <div class="pt-4 border-t border-neutral-100 dark:border-neutral-700/50 flex items-center justify-between">
+                            <span class="text-xs font-medium text-neutral-500 dark:text-neutral-400">
+                                Автономность и безопасность
+                            </span>
+                            <a href="/services/vk-posts-archive-transfer" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
+                                Заказать перенос
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Заглушка под следующую услугу (по желанию) -->
+                    <!-- <div class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700/60 shadow-sm"> ... </div> -->
+
+                </div>
+            </div>
+        </section>         
+
+
         <footer id="footer" class="bg-neutral-50 dark:bg-neutral-950 text-neutral-500 dark:text-neutral-400 text-[13px] pt-16 pb-8 border-t border-neutral-200/50 dark:border-neutral-900 transition-colors duration-300"></footer>
         <!-- Footer -->
         <script src="https://kit.fontawesome.com/1b1dcc9abc.js" crossorigin="anonymous"></script>
