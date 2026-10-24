@@ -25,7 +25,6 @@
         <noscript>
             <meta http-equiv="refresh" content="0; url=/noscript.html">
         </noscript>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
             tailwind.config = {
                 theme: {
@@ -96,13 +95,15 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                     
                     <div class="w-full aspect-video lg:aspect-square lg:h-[530px] rounded-2xl overflow-hidden shadow-sm border border-neutral-100 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-800">
-                        <iframe 
-                            src="https://maps.google.com/maps?q=Грозный&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                            class="w-full h-full border-0" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <div class="relative w-full h-full overflow-hidden">
+                            <a href="https://yandex.ru/maps/1106/grozniy/?utm_medium=mapframe&utm_source=maps" target="_blank" rel="noopener" style="color:#eee;font-size:12px;position:absolute;top:0px;z-index:1;">Грозный</a>
+                            <a href="https://yandex.ru/maps/1106/grozniy/house/prospekt_akhmat_khadzhi_abdulkhamidovicha_kadyrova_37/YEwYcQdhQUYCQFppfX9xeHprZQ==/?ll=45.701835%2C43.309681&z=17.15&utm_medium=mapframe&utm_source=maps" target="_blank" rel="noopener" style="color:#eee;font-size:12px;position:absolute;top:14px;z-index:1;">Проспект Ахмат-Хаджи Абдулхамидовича Кадырова, 37 — Яндекс Карты</a>
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=45.701835%2C43.309681&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDk1MDcwMTE1EqEB0KDQvtGB0YHQuNGPLCDQp9C10YfQtdC90YHQutCw0Y8g0KDQtdGB0L_Rg9Cx0LvQuNC60LAsINCT0YDQvtC30L3Ri9C5LCDQv9GA0L7RgdC_0LXQutGCINCQ0YXQvNCw0YIt0KXQsNC00LbQuCDQkNCx0LTRg9C70YXQsNC80LjQtNC-0LLQuNGH0LAg0JrQsNC00YvRgNC-0LLQsCwgMzciCg2uzjZCFR49LUI%2C&sctx=ZAAAAAgBEAAaKAoSCfAYHvtZ2kZAEYBFfv0Qp0VAEhIJRUjdzr7ykD8RZysv%2BZ%2F8fT8iBgABAgMEBSgKOABAqZ8NSAFqAnJ1nQHNzMw9oAEAqAEAvQFiGNbbwgEMpc%2FtpPUG%2ForGiI0DggIw0LPRgNC%2B0LfQvdC10L3RgdC60LDRjyDRiNC60L7Qu9CwINC00LjQt9Cw0LnQvdCwigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=45.701835%2C43.309681&sspn=0.013537%2C0.005988&text=%D0%B3%D1%80%D0%BE%D0%B7%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B0&z=17.15"
+                                class="absolute top-0 left-0 w-full border-0" style="height:calc(100% + 140px)"
+                                allowfullscreen="true"
+                                loading="lazy"></iframe>
+                        </div>
                     </div>
 
                     <div class="w-full">
